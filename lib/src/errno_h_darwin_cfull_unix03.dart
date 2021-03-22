@@ -89,14 +89,16 @@
 ////////////////////////////////////////////////////////////////////////////////
 // This file is created from /usr/include/sys/errno.h dated Mar 6, 2018.
 // The source file is used by GCC on Mac OS High Sierra.
-// These are the constants in C in the case of __DARWIN_UNIX03 directive
-// enabled and __DARWIN_C_LEVEL>=__DARWIN_C_FULL.
+//
+// These are the constants in C in the case of __DARWIN_UNIX03=1 
+// and __DARWIN_C_LEVEL>=__DARWIN_C_FULL.
+//
 // All original comments have been preserved.
- 
-// 
-// Error codes 
+
 
 class DarwinErrno {
+
+	// Error codes
 	 
 	static const int EPERM = 1; // Operation not permitted 
 	static const int ENOENT = 2; // No such file or directory 
