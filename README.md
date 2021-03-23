@@ -1,4 +1,4 @@
-![Generic badge](https://img.shields.io/badge/status-draft-error.svg)
+[![Actions Status](https://github.com/rtmigo/errno/workflows/unittest/badge.svg?branch=master)](https://github.com/rtmigo/errno/actions)
 
 # [errno](https://github.com/rtmigo/errno)
 
