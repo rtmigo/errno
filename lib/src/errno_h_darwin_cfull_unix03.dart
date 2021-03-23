@@ -1,6 +1,6 @@
 
 // SPDX-FileCopyrightText: (c) 2021 Art Galkin <github.com/rtmigo>
-// SPDX-License-Identifier: BSD-3-Clause
+// SPDX-License-Identifier: MIT
 
 // This file is created from /usr/include/sys/errno.h dated Mar 6, 2018.
 // The source file is used by GCC on Mac OS High Sierra.
@@ -13,7 +13,7 @@
 /// These numbers can usually be found in the [OSError.errorCode]
 /// property value, when the Dart/Flutter app runs on macOS or 
 /// iOS platform. 
-class DarwinErrno {
+class DarwinErrors {
 
 	//
 	// Copyright (c) 2000-2012 Apple, Inc. All rights reserved.

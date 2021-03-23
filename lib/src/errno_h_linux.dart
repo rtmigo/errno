@@ -1,6 +1,6 @@
 
 // SPDX-FileCopyrightText: (c) 2021 Art Galkin <github.com/rtmigo>
-// SPDX-License-Identifier: BSD-3-Clause
+// SPDX-License-Identifier: MIT
 
 // This file is created from two files found in /usr/include/asm-generic
 // in Ubuntu 20.04. The files were dated Feb 19, 2021.
@@ -13,12 +13,12 @@
 // with the kernel.
 //
 // I keep all SPDX IDs in code as recommended, along with the rest 
-// of the comments. 
+// of the comments.
 
 /// These numbers can usually be found in the [OSError.errorCode]
 /// property value, when the Dart/Flutter app runs on Linux or  
 /// Android platform.
-class LinuxErrno {
+class LinuxErrors {
 
 	// errno-base.h
 	// SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note

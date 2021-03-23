@@ -8,10 +8,35 @@ These numbers can usually be found in the
 [OSError.errorCode](https://api.dart.dev/stable/dart-io/OSError/errorCode.html) 
 property value, when the Dart/Flutter app the application is facing a system error.
 
-| Class          | OS             |
-|----------------|----------------|
-| `LinuxErrno`   | Android, Linux |
-| `DarwinErrno`  | iOS, macOS     |
-| `WindowsErrno` | Windows        |
+| Class           | OS             |
+|-----------------|----------------|
+| `LinuxErrors`   | Android, Linux |
+| `DarwinErrors`  | iOS, macOS     |
+| `WindowsErrors` | Windows        |
+
+``` dart
+import 'dart:io';
+
+import 'package:errno/errno.dart';
+
+void main() {
+
+  try {
+    var lst = Directory("My Documents").listSync();
+    print(lst);
+  } on FileSystemException catch (exc) {
+
+    if (exc.osError?.errorCode == LinuxErrors.enoent ||
+        exc.osError?.errorCode == WindowsErrors.pathNotFound) {
+      
+      print("The directory does not exist.");
+
+    } else {
+      rethrow;
+    }
+  }
+
+}
+```
 
 
