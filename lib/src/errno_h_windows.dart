@@ -7,8 +7,12 @@
 // and their absence. When the system is working properly, it is
 // actually a problem officially named ERROR_SUCCESS.
 //
-// This is a list of the first 1299 errors, known as System Error Codes.
-// As far as I can tell, this list is accurate in the spring of 2021.
+// This is a partial list of System Error Codes. For spring 2021, it
+// contains all error codes up to 1299.
+//
+// The full list is huge, with error numbers reaching 11,000.
+// For exotic error codes, it is better to refer to the primary
+// sources from Microsoft.
 
 /// These numbers can usually be found in the [OSError.errorCode]
 /// property value, when the Dart/Flutter app runs on Windows platform. 
