@@ -9,8 +9,7 @@ void main() {
     print(lst);
   } on FileSystemException catch (exc) {
 
-    if (exc.osError?.errorCode == LinuxErrors.enoent ||
-        exc.osError?.errorCode == WindowsErrors.pathNotFound) {
+    if (exc.osError?.errorCode == WindowsErrors.pathNotFound) {
 
       print("The directory does not exist.");
 
