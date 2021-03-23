@@ -13,14 +13,10 @@ rsync -Rrv ./ "$temp_pub_dir" \
   --exclude="pubpub.sh" \
   --exclude="test/" \
   --exclude="todo.txt" \
-  --exclude="benchmark/" \
-  --exclude="reference/" \
   --exclude="README.md" \
   --exclude="analysis_options.yaml" \
   --exclude=".github" \
-  --exclude="labuda/" \
-  --exclude="draft/" \
-  --exclude="experiments"
+  --exclude="draft/"
 
 # removing everything before "\n# ", the first header
 old_readme=$(cat README.md | tr '\n' '\r')
