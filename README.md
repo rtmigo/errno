@@ -14,6 +14,8 @@ property value, when the Dart/Flutter app the application is facing a system err
 | `DarwinErrors`  | iOS, macOS     |
 | `WindowsErrors` | Windows        |
 
+# Example 
+
 ``` dart
 import 'dart:io';
 
