@@ -10,11 +10,11 @@ property usually specifies the problem that occurred.
 
 
 
-| Class           | OS             |
-|-----------------|----------------|
-| `LinuxErrors`   | Android, Linux |
-| `DarwinErrors`  | iOS, macOS     |
-| `WindowsErrors` | Windows        |
+| OS             | Class           |
+|----------------|-----------------|
+| Android, Linux | `LinuxErrors`   |
+| iOS, macOS     | `DarwinErrors`  |
+| Windows        | `WindowsErrors` |
 
 # Example 
 
