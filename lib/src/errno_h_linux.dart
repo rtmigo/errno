@@ -7,7 +7,7 @@
 //
 // The Linux kernel is licensed under the GPL 2.0 with Linus Torvalds' 
 // note that when a program uses code to make system calls to the kernel, 
-// this is the normal use. Such a program is not a "derived work".
+// this is the normal use, and such a program is not a "derived work".
 // So I'm pretty sure that neither "errno.h" nor this file falls under 
 // the GPL copyleft requirements as long as they are used to interact 
 // with the kernel.
