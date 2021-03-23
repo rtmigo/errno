@@ -1,7 +1,7 @@
 
 // SPDX-FileCopyrightText: (c) 2021 Art Galkin <github.com/rtmigo>
 // SPDX-License-Identifier: BSD-3-Clause
-//
+
 // This file is created from /usr/include/sys/errno.h dated Mar 6, 2018.
 // The source file is used by GCC on Mac OS High Sierra.
 //

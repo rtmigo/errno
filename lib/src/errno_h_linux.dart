@@ -1,7 +1,7 @@
 
 // SPDX-FileCopyrightText: (c) 2021 Art Galkin <github.com/rtmigo>
 // SPDX-License-Identifier: BSD-3-Clause
-//
+
 // This file is created from two files found in /usr/include/asm-generic
 // in Ubuntu 20.04. The files were dated Feb 19, 2021.
 //
