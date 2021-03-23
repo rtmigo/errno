@@ -12,7 +12,6 @@
 
 class DarwinErrno {
 
-	// darwin_cfull_unix03_errno.h
 	//
 	// Copyright (c) 2000-2012 Apple, Inc. All rights reserved.
 	//
