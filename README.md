@@ -2,12 +2,13 @@
 
 # [errno](https://github.com/rtmigo/errno)
 
-A set of classes that define `int` constants with system error codes for OSes 
+A set of classes that define constants with system error codes for OSes 
 supported by the Dart language.
 
-These numbers can usually be found in the 
-[OSError.errorCode](https://api.dart.dev/stable/dart-io/OSError/errorCode.html) 
-property value, when the Dart/Flutter app is facing a system error.
+With these numeric codes, the [OSError.errorCode](https://api.dart.dev/stable/dart-io/OSError/errorCode.html) 
+property usually specifies the problem that occurred.
+
+
 
 | Class           | OS             |
 |-----------------|----------------|
