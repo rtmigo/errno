@@ -6,7 +6,7 @@ A set of constants with operating system error codes.
 
 These numbers can usually be found in the 
 [OSError.errorCode](https://api.dart.dev/stable/dart-io/OSError/errorCode.html) 
-property value, when the Dart/Flutter app the application is facing a system error.
+property value, when the Dart/Flutter app is facing a system error.
 
 | Class           | OS             |
 |-----------------|----------------|
