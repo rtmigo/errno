@@ -4,7 +4,8 @@
 
 Defines **system error code** constants for the OSs running the Dart platform.
 
-With these numeric codes, the [OSError.errorCode](https://api.dart.dev/stable/dart-io/OSError/errorCode.html) 
+With these numeric codes, the 
+[OSError.errorCode](https://api.dart.dev/stable/dart-io/OSError/errorCode.html) 
 property usually specifies the problem that occurred.
 
 
