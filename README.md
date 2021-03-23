@@ -2,8 +2,7 @@
 
 # [errno](https://github.com/rtmigo/errno)
 
-Defines constants with system error codes for OSes 
-supported by the Dart language.
+Defines **system error code constants** for the OSs that the Dart platform is running on.
 
 With these numeric codes, the [OSError.errorCode](https://api.dart.dev/stable/dart-io/OSError/errorCode.html) 
 property usually specifies the problem that occurred.

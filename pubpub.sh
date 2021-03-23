@@ -12,6 +12,7 @@ rsync -Rrv ./ "$temp_pub_dir" \
   --exclude=".git" \
   --exclude="pubpub.sh" \
   --exclude="test/" \
+  --exclude="generator/" \
   --exclude="todo.txt" \
   --exclude="README.md" \
   --exclude="analysis_options.yaml" \
@@ -27,6 +28,6 @@ echo "$new_readme" > "$temp_pub_dir/README.md"
 
 cd "$temp_pub_dir"
 dartfmt -w .
-#dart pub publish --dry-run
-dart pub publish
+dart pub publish --dry-run
+#dart pub publish
 #open "$temp_pub_dir"
