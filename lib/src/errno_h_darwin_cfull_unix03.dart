@@ -431,4 +431,327 @@ class DarwinErrors {
 	/// Must be equal largest errno
 	static const int elast = 106; // Must be equal largest errno
 	
+
+	//// THE FOLLOWING CONSTANTS ARE NOT FROM ERRNO.H ////
+
+	// These constants are added for code readability
+	// as they are more consistent with the Dart naming standards
+
+	/// EPERM: Operation not permitted
+	static const int operationNotPermitted = eperm;
+
+	/// ENOENT: No such file or directory
+	static const int noSuchFileOrDirectory = enoent;
+
+	/// ESRCH: No such process
+	static const int noSuchProcess = esrch;
+
+	/// EINTR: Interrupted system call
+	static const int interruptedSystemCall = eintr;
+
+	/// EIO: Input/output error
+	static const int inputOutputError = eio;
+
+	/// ENXIO: Device not configured
+	static const int deviceNotConfigured = enxio;
+
+	/// E2BIG: Argument list too long
+	static const int argumentListTooLong = e2big;
+
+	/// ENOEXEC: Exec format error
+	static const int execFormatError = enoexec;
+
+	/// EBADF: Bad file descriptor
+	static const int badFileDescriptor = ebadf;
+
+	/// ECHILD: No child processes
+	static const int noChildProcesses = echild;
+
+	/// EDEADLK: Resource deadlock avoided
+	static const int resourceDeadlockAvoided = edeadlk;
+
+	/// ENOMEM: Cannot allocate memory
+	static const int cannotAllocateMemory = enomem;
+
+	/// EACCES: Permission denied
+	static const int permissionDenied = eacces;
+
+	/// EFAULT: Bad address
+	static const int badAddress = efault;
+
+	/// ENOTBLK: Block device required
+	static const int blockDeviceRequired = enotblk;
+
+	/// EBUSY: Device / Resource busy
+	static const int deviceResourceBusy = ebusy;
+
+	/// EEXIST: File exists
+	static const int fileExists = eexist;
+
+	/// EXDEV: Cross-device link
+	static const int crossDeviceLink = exdev;
+
+	/// ENODEV: Operation not supported by device
+	static const int operationNotSupportedByDevice = enodev;
+
+	/// ENOTDIR: Not a directory
+	static const int notDirectory = enotdir;
+
+	/// EISDIR: Is a directory
+	static const int isDirectory = eisdir;
+
+	/// EINVAL: Invalid argument
+	static const int invalidArgument = einval;
+
+	/// ENFILE: Too many open files in system
+	static const int tooManyOpenFilesInSystem = enfile;
+
+	/// EMFILE: Too many open files
+	static const int tooManyOpenFiles = emfile;
+
+	/// ENOTTY: Inappropriate ioctl for device
+	static const int inappropriateIoctlForDevice = enotty;
+
+	/// ETXTBSY: Text file busy
+	static const int textFileBusy = etxtbsy;
+
+	/// EFBIG: File too large
+	static const int fileTooLarge = efbig;
+
+	/// ENOSPC: No space left on device
+	static const int noSpaceLeftOnDevice = enospc;
+
+	/// ESPIPE: Illegal seek
+	static const int illegalSeek = espipe;
+
+	/// EROFS: Read-only file system
+	static const int readOnlyFileSystem = erofs;
+
+	/// EMLINK: Too many links
+	static const int tooManyLinks = emlink;
+
+	/// EPIPE: Broken pipe
+	static const int brokenPipe = epipe;
+
+	/// EDOM: Numerical argument out of domain
+	static const int numericalArgumentOutOfDomain = edom;
+
+	/// ERANGE: Result too large
+	static const int resultTooLarge = erange;
+
+	/// EAGAIN: Resource temporarily unavailable
+	static const int resourceTemporarilyUnavailable = eagain;
+
+	/// EWOULDBLOCK: Operation would block
+	static const int operationWouldBlock = ewouldblock;
+
+	/// EINPROGRESS: Operation now in progress
+	static const int operationNowInProgress = einprogress;
+
+	/// EALREADY: Operation already in progress
+	static const int operationAlreadyInProgress = ealready;
+
+	/// ENOTSOCK: Socket operation on non-socket
+	static const int socketOperationOnNonSocket = enotsock;
+
+	/// EDESTADDRREQ: Destination address required
+	static const int destinationAddressRequired = edestaddrreq;
+
+	/// EMSGSIZE: Message too long
+	static const int messageTooLong = emsgsize;
+
+	/// EPROTOTYPE: Protocol wrong type for socket
+	static const int protocolWrongTypeForSocket = eprototype;
+
+	/// ENOPROTOOPT: Protocol not available
+	static const int protocolNotAvailable = enoprotoopt;
+
+	/// EPROTONOSUPPORT: Protocol not supported
+	static const int protocolNotSupported = eprotonosupport;
+
+	/// ESOCKTNOSUPPORT: Socket type not supported
+	static const int socketTypeNotSupported = esocktnosupport;
+
+	/// ENOTSUP: Operation not supported
+	static const int operationNotSupported = enotsup;
+
+	/// EPFNOSUPPORT: Protocol family not supported
+	static const int protocolFamilyNotSupported = epfnosupport;
+
+	/// EAFNOSUPPORT: Address family not supported by protocol family
+	static const int addressFamilyNotSupportedByProtocolFamily = eafnosupport;
+
+	/// EADDRINUSE: Address already in use
+	static const int addressAlreadyInUse = eaddrinuse;
+
+	/// EADDRNOTAVAIL: Can't assign requested address
+	static const int canTAssignRequestedAddress = eaddrnotavail;
+
+	/// ENETDOWN: Network is down
+	static const int networkIsDown = enetdown;
+
+	/// ENETUNREACH: Network is unreachable
+	static const int networkIsUnreachable = enetunreach;
+
+	/// ENETRESET: Network dropped connection on reset
+	static const int networkDroppedConnectionOnReset = enetreset;
+
+	/// ECONNABORTED: Software caused connection abort
+	static const int softwareCausedConnectionAbort = econnaborted;
+
+	/// ECONNRESET: Connection reset by peer
+	static const int connectionResetByPeer = econnreset;
+
+	/// ENOBUFS: No buffer space available
+	static const int noBufferSpaceAvailable = enobufs;
+
+	/// EISCONN: Socket is already connected
+	static const int socketIsAlreadyConnected = eisconn;
+
+	/// ENOTCONN: Socket is not connected
+	static const int socketIsNotConnected = enotconn;
+
+	/// ESHUTDOWN: Can't send after socket shutdown
+	static const int canTSendAfterSocketShutdown = eshutdown;
+
+	/// ETOOMANYREFS: Too many references: can't splice
+	static const int tooManyReferencesCanTSplice = etoomanyrefs;
+
+	/// ETIMEDOUT: Operation timed out
+	static const int operationTimedOut = etimedout;
+
+	/// ECONNREFUSED: Connection refused
+	static const int connectionRefused = econnrefused;
+
+	/// ELOOP: Too many levels of symbolic links
+	static const int tooManyLevelsOfSymbolicLinks = eloop;
+
+	/// ENAMETOOLONG: File name too long
+	static const int fileNameTooLong = enametoolong;
+
+	/// EHOSTDOWN: Host is down
+	static const int hostIsDown = ehostdown;
+
+	/// EHOSTUNREACH: No route to host
+	static const int noRouteToHost = ehostunreach;
+
+	/// ENOTEMPTY: Directory not empty
+	static const int directoryNotEmpty = enotempty;
+
+	/// EPROCLIM: Too many processes
+	static const int tooManyProcesses = eproclim;
+
+	/// EUSERS: Too many users
+	static const int tooManyUsers = eusers;
+
+	/// EDQUOT: Disc quota exceeded
+	static const int discQuotaExceeded = edquot;
+
+	/// ESTALE: Stale NFS file handle
+	static const int staleNfsFileHandle = estale;
+
+	/// EREMOTE: Too many levels of remote in path
+	static const int tooManyLevelsOfRemoteInPath = eremote;
+
+	/// EBADRPC: RPC struct is bad
+	static const int rpcStructIsBad = ebadrpc;
+
+	/// ERPCMISMATCH: RPC version wrong
+	static const int rpcVersionWrong = erpcmismatch;
+
+	/// EPROGUNAVAIL: RPC prog. not avail
+	static const int rpcProgNotAvail = eprogunavail;
+
+	/// EPROGMISMATCH: Program version wrong
+	static const int programVersionWrong = eprogmismatch;
+
+	/// EPROCUNAVAIL: Bad procedure for program
+	static const int badProcedureForProgram = eprocunavail;
+
+	/// ENOLCK: No locks available
+	static const int noLocksAvailable = enolck;
+
+	/// ENOSYS: Function not implemented
+	static const int functionNotImplemented = enosys;
+
+	/// EFTYPE: Inappropriate file type or format
+	static const int inappropriateFileTypeOrFormat = eftype;
+
+	/// EAUTH: Authentication error
+	static const int authenticationError = eauth;
+
+	/// ENEEDAUTH: Need authenticator
+	static const int needAuthenticator = eneedauth;
+
+	/// EPWROFF: Device power is off
+	static const int devicePowerIsOff = epwroff;
+
+	/// EDEVERR: Device error, e.g. paper out
+	static const int deviceError = edeverr;
+
+	/// EOVERFLOW: Value too large to be stored in data type
+	static const int valueTooLargeToBeStoredInDataType = eoverflow;
+
+	/// EBADEXEC: Bad executable
+	static const int badExecutable = ebadexec;
+
+	/// EBADARCH: Bad CPU type in executable
+	static const int badCpuTypeInExecutable = ebadarch;
+
+	/// ESHLIBVERS: Shared library version mismatch
+	static const int sharedLibraryVersionMismatch = eshlibvers;
+
+	/// EBADMACHO: Malformed Macho file
+	static const int malformedMachoFile = ebadmacho;
+
+	/// ECANCELED: Operation canceled
+	static const int operationCanceled = ecanceled;
+
+	/// EIDRM: Identifier removed
+	static const int identifierRemoved = eidrm;
+
+	/// ENOMSG: No message of desired type
+	static const int noMessageOfDesiredType = enomsg;
+
+	/// EILSEQ: Illegal byte sequence
+	static const int illegalByteSequence = eilseq;
+
+	/// ENOATTR: Attribute not found
+	static const int attributeNotFound = enoattr;
+
+	/// EBADMSG: Bad message
+	static const int badMessage = ebadmsg;
+
+	/// ENODATA: No message available on STREAM
+	static const int noMessageAvailableOnStream = enodata;
+
+	/// ENOSR: No STREAM resources
+	static const int noStreamResources = enosr;
+
+	/// ENOSTR: Not a STREAM
+	static const int notStream = enostr;
+
+	/// EPROTO: Protocol error
+	static const int protocolError = eproto;
+
+	/// ETIME: STREAM ioctl timeout
+	static const int streamIoctlTimeout = etime;
+
+	/// EOPNOTSUPP: Operation not supported on socket
+	static const int operationNotSupportedOnSocket = eopnotsupp;
+
+	/// ENOPOLICY: No such policy registered
+	static const int noSuchPolicyRegistered = enopolicy;
+
+	/// ENOTRECOVERABLE: State not recoverable
+	static const int stateNotRecoverable = enotrecoverable;
+
+	/// EOWNERDEAD: Previous owner died
+	static const int previousOwnerDied = eownerdead;
+
+	/// EQFULL: Interface output queue is full
+	static const int interfaceOutputQueueIsFull = eqfull;
+
+	/// ELAST: Must be equal largest errno
+	static const int mustBeEqualLargestErrno = elast;
 }

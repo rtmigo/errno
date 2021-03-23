@@ -1,3 +1,7 @@
+# 1.2.0
+
+- Added alias constants for code readability
+
 # 1.1.0
 
 - Comments replaced with docstrings
