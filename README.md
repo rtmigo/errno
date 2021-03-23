@@ -37,7 +37,6 @@ void main() {
       rethrow;
     }
   }
-
 }
 ```
 
