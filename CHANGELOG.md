@@ -1,3 +1,7 @@
+# 1.1.0
+
+- Comments on constants replaced with docstrings
+
 # 1.0.1
 
 - Eased SDK requirements
