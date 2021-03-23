@@ -1,3 +1,4 @@
+[![Pub Package](https://img.shields.io/pub/v/errno.svg)](https://pub.dev/packages/errno)
 [![Actions Status](https://github.com/rtmigo/errno/workflows/unittest/badge.svg?branch=master)](https://github.com/rtmigo/errno/actions)
 
 # [errno](https://github.com/rtmigo/errno)
