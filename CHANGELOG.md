@@ -1,3 +1,7 @@
+# 1.3.0
+
+- Updated docstring values for better previews in IDEA
+
 # 1.2.0
 
 - Added alias constants for code readability

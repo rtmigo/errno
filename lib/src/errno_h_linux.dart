@@ -23,119 +23,119 @@ class LinuxErrors {
 	// errno-base.h
 	// SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note
 	
-	/// Operation not permitted
+	/// `EPERM`: "Operation not permitted" error from errno.h in Linux.
 	static const int eperm = 1; // Operation not permitted
 
-	/// No such file or directory
+	/// `ENOENT`: "No such file or directory" error from errno.h in Linux.
 	static const int enoent = 2; // No such file or directory
 
-	/// No such process
+	/// `ESRCH`: "No such process" error from errno.h in Linux.
 	static const int esrch = 3; // No such process
 
-	/// Interrupted system call
+	/// `EINTR`: "Interrupted system call" error from errno.h in Linux.
 	static const int eintr = 4; // Interrupted system call
 
-	/// I/O error
+	/// `EIO`: "I/O error" error from errno.h in Linux.
 	static const int eio = 5; // I/O error
 
-	/// No such device or address
+	/// `ENXIO`: "No such device or address" error from errno.h in Linux.
 	static const int enxio = 6; // No such device or address
 
-	/// Argument list too long
+	/// `E2BIG`: "Argument list too long" error from errno.h in Linux.
 	static const int e2big = 7; // Argument list too long
 
-	/// Exec format error
+	/// `ENOEXEC`: "Exec format error" error from errno.h in Linux.
 	static const int enoexec = 8; // Exec format error
 
-	/// Bad file number
+	/// `EBADF`: "Bad file number" error from errno.h in Linux.
 	static const int ebadf = 9; // Bad file number
 
-	/// No child processes
+	/// `ECHILD`: "No child processes" error from errno.h in Linux.
 	static const int echild = 10; // No child processes
 
-	/// Try again
+	/// `EAGAIN`: "Try again" error from errno.h in Linux.
 	static const int eagain = 11; // Try again
 
-	/// Out of memory
+	/// `ENOMEM`: "Out of memory" error from errno.h in Linux.
 	static const int enomem = 12; // Out of memory
 
-	/// Permission denied
+	/// `EACCES`: "Permission denied" error from errno.h in Linux.
 	static const int eacces = 13; // Permission denied
 
-	/// Bad address
+	/// `EFAULT`: "Bad address" error from errno.h in Linux.
 	static const int efault = 14; // Bad address
 
-	/// Block device required
+	/// `ENOTBLK`: "Block device required" error from errno.h in Linux.
 	static const int enotblk = 15; // Block device required
 
-	/// Device or resource busy
+	/// `EBUSY`: "Device or resource busy" error from errno.h in Linux.
 	static const int ebusy = 16; // Device or resource busy
 
-	/// File exists
+	/// `EEXIST`: "File exists" error from errno.h in Linux.
 	static const int eexist = 17; // File exists
 
-	/// Cross-device link
+	/// `EXDEV`: "Cross-device link" error from errno.h in Linux.
 	static const int exdev = 18; // Cross-device link
 
-	/// No such device
+	/// `ENODEV`: "No such device" error from errno.h in Linux.
 	static const int enodev = 19; // No such device
 
-	/// Not a directory
+	/// `ENOTDIR`: "Not a directory" error from errno.h in Linux.
 	static const int enotdir = 20; // Not a directory
 
-	/// Is a directory
+	/// `EISDIR`: "Is a directory" error from errno.h in Linux.
 	static const int eisdir = 21; // Is a directory
 
-	/// Invalid argument
+	/// `EINVAL`: "Invalid argument" error from errno.h in Linux.
 	static const int einval = 22; // Invalid argument
 
-	/// File table overflow
+	/// `ENFILE`: "File table overflow" error from errno.h in Linux.
 	static const int enfile = 23; // File table overflow
 
-	/// Too many open files
+	/// `EMFILE`: "Too many open files" error from errno.h in Linux.
 	static const int emfile = 24; // Too many open files
 
-	/// Not a typewriter
+	/// `ENOTTY`: "Not a typewriter" error from errno.h in Linux.
 	static const int enotty = 25; // Not a typewriter
 
-	/// Text file busy
+	/// `ETXTBSY`: "Text file busy" error from errno.h in Linux.
 	static const int etxtbsy = 26; // Text file busy
 
-	/// File too large
+	/// `EFBIG`: "File too large" error from errno.h in Linux.
 	static const int efbig = 27; // File too large
 
-	/// No space left on device
+	/// `ENOSPC`: "No space left on device" error from errno.h in Linux.
 	static const int enospc = 28; // No space left on device
 
-	/// Illegal seek
+	/// `ESPIPE`: "Illegal seek" error from errno.h in Linux.
 	static const int espipe = 29; // Illegal seek
 
-	/// Read-only file system
+	/// `EROFS`: "Read-only file system" error from errno.h in Linux.
 	static const int erofs = 30; // Read-only file system
 
-	/// Too many links
+	/// `EMLINK`: "Too many links" error from errno.h in Linux.
 	static const int emlink = 31; // Too many links
 
-	/// Broken pipe
+	/// `EPIPE`: "Broken pipe" error from errno.h in Linux.
 	static const int epipe = 32; // Broken pipe
 
-	/// Math argument out of domain of func
+	/// `EDOM`: "Math argument out of domain of func" error from errno.h in Linux.
 	static const int edom = 33; // Math argument out of domain of func
 
-	/// Math result not representable
+	/// `ERANGE`: "Math result not representable" error from errno.h in Linux.
 	static const int erange = 34; // Math result not representable
 	
 	// errno.h
 	// SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note
 	
 	
-	/// Resource deadlock would occur
+	/// `EDEADLK`: "Resource deadlock would occur" error from errno.h in Linux.
 	static const int edeadlk = 35; // Resource deadlock would occur
 
-	/// File name too long
+	/// `ENAMETOOLONG`: "File name too long" error from errno.h in Linux.
 	static const int enametoolong = 36; // File name too long
 
-	/// No record locks available
+	/// `ENOLCK`: "No record locks available" error from errno.h in Linux.
 	static const int enolck = 37; // No record locks available
 	
 	//
@@ -145,694 +145,826 @@ class LinuxErrors {
 	// failures due to attempts to use a nonexistent syscall, syscall
 	// implementations should refrain from returning -ENOSYS.
 	
-	/// Invalid system call number
+	/// `ENOSYS`: "Invalid system call number" error from errno.h in Linux.
 	static const int enosys = 38; // Invalid system call number
 	
-	/// Directory not empty
+	/// `ENOTEMPTY`: "Directory not empty" error from errno.h in Linux.
 	static const int enotempty = 39; // Directory not empty
 
-	/// Too many symbolic links encountered
+	/// `ELOOP`: "Too many symbolic links encountered" error from errno.h in Linux.
 	static const int eloop = 40; // Too many symbolic links encountered
 
-	/// Operation would block
+	/// `EWOULDBLOCK`: "Operation would block" error from errno.h in Linux.
 	static const int ewouldblock = eagain; // Operation would block
 
-	/// No message of desired type
+	/// `ENOMSG`: "No message of desired type" error from errno.h in Linux.
 	static const int enomsg = 42; // No message of desired type
 
-	/// Identifier removed
+	/// `EIDRM`: "Identifier removed" error from errno.h in Linux.
 	static const int eidrm = 43; // Identifier removed
 
-	/// Channel number out of range
+	/// `ECHRNG`: "Channel number out of range" error from errno.h in Linux.
 	static const int echrng = 44; // Channel number out of range
 
-	/// Level 2 not synchronized
+	/// `EL2NSYNC`: "Level 2 not synchronized" error from errno.h in Linux.
 	static const int el2nsync = 45; // Level = 2; not synchronized
 
-	/// Level 3 halted
+	/// `EL3HLT`: "Level 3 halted" error from errno.h in Linux.
 	static const int el3hlt = 46; // Level = 3; halted
 
-	/// Level 3 reset
+	/// `EL3RST`: "Level 3 reset" error from errno.h in Linux.
 	static const int el3rst = 47; // Level = 3; reset
 
-	/// Link number out of range
+	/// `ELNRNG`: "Link number out of range" error from errno.h in Linux.
 	static const int elnrng = 48; // Link number out of range
 
-	/// Protocol driver not attached
+	/// `EUNATCH`: "Protocol driver not attached" error from errno.h in Linux.
 	static const int eunatch = 49; // Protocol driver not attached
 
-	/// No CSI structure available
+	/// `ENOCSI`: "No CSI structure available" error from errno.h in Linux.
 	static const int enocsi = 50; // No CSI structure available
 
-	/// Level 2 halted
+	/// `EL2HLT`: "Level 2 halted" error from errno.h in Linux.
 	static const int el2hlt = 51; // Level = 2; halted
 
-	/// Invalid exchange
+	/// `EBADE`: "Invalid exchange" error from errno.h in Linux.
 	static const int ebade = 52; // Invalid exchange
 
-	/// Invalid request descriptor
+	/// `EBADR`: "Invalid request descriptor" error from errno.h in Linux.
 	static const int ebadr = 53; // Invalid request descriptor
 
-	/// Exchange full
+	/// `EXFULL`: "Exchange full" error from errno.h in Linux.
 	static const int exfull = 54; // Exchange full
 
-	/// No anode
+	/// `ENOANO`: "No anode" error from errno.h in Linux.
 	static const int enoano = 55; // No anode
 
-	/// Invalid request code
+	/// `EBADRQC`: "Invalid request code" error from errno.h in Linux.
 	static const int ebadrqc = 56; // Invalid request code
 
-	/// Invalid slot
+	/// `EBADSLT`: "Invalid slot" error from errno.h in Linux.
 	static const int ebadslt = 57; // Invalid slot
 	
 	static const int edeadlock = edeadlk;
 	
-	/// Bad font file format
+	/// `EBFONT`: "Bad font file format" error from errno.h in Linux.
 	static const int ebfont = 59; // Bad font file format
 
-	/// Device not a stream
+	/// `ENOSTR`: "Device not a stream" error from errno.h in Linux.
 	static const int enostr = 60; // Device not a stream
 
-	/// No data available
+	/// `ENODATA`: "No data available" error from errno.h in Linux.
 	static const int enodata = 61; // No data available
 
-	/// Timer expired
+	/// `ETIME`: "Timer expired" error from errno.h in Linux.
 	static const int etime = 62; // Timer expired
 
-	/// Out of streams resources
+	/// `ENOSR`: "Out of streams resources" error from errno.h in Linux.
 	static const int enosr = 63; // Out of streams resources
 
-	/// Machine is not on the network
+	/// `ENONET`: "Machine is not on the network" error from errno.h in Linux.
 	static const int enonet = 64; // Machine is not on the network
 
-	/// Package not installed
+	/// `ENOPKG`: "Package not installed" error from errno.h in Linux.
 	static const int enopkg = 65; // Package not installed
 
-	/// Object is remote
+	/// `EREMOTE`: "Object is remote" error from errno.h in Linux.
 	static const int eremote = 66; // Object is remote
 
-	/// Link has been severed
+	/// `ENOLINK`: "Link has been severed" error from errno.h in Linux.
 	static const int enolink = 67; // Link has been severed
 
-	/// Advertise error
+	/// `EADV`: "Advertise error" error from errno.h in Linux.
 	static const int eadv = 68; // Advertise error
 
-	/// Srmount error
+	/// `ESRMNT`: "Srmount error" error from errno.h in Linux.
 	static const int esrmnt = 69; // Srmount error
 
-	/// Communication error on send
+	/// `ECOMM`: "Communication error on send" error from errno.h in Linux.
 	static const int ecomm = 70; // Communication error on send
 
-	/// Protocol error
+	/// `EPROTO`: "Protocol error" error from errno.h in Linux.
 	static const int eproto = 71; // Protocol error
 
-	/// Multihop attempted
+	/// `EMULTIHOP`: "Multihop attempted" error from errno.h in Linux.
 	static const int emultihop = 72; // Multihop attempted
 
-	/// RFS specific error
+	/// `EDOTDOT`: "RFS specific error" error from errno.h in Linux.
 	static const int edotdot = 73; // RFS specific error
 
-	/// Not a data message
+	/// `EBADMSG`: "Not a data message" error from errno.h in Linux.
 	static const int ebadmsg = 74; // Not a data message
 
-	/// Value too large for defined data type
+	/// `EOVERFLOW`: "Value too large for defined data type" error from errno.h in Linux.
 	static const int eoverflow = 75; // Value too large for defined data type
 
-	/// Name not unique on network
+	/// `ENOTUNIQ`: "Name not unique on network" error from errno.h in Linux.
 	static const int enotuniq = 76; // Name not unique on network
 
-	/// File descriptor in bad state
+	/// `EBADFD`: "File descriptor in bad state" error from errno.h in Linux.
 	static const int ebadfd = 77; // File descriptor in bad state
 
-	/// Remote address changed
+	/// `EREMCHG`: "Remote address changed" error from errno.h in Linux.
 	static const int eremchg = 78; // Remote address changed
 
-	/// Can not access a needed shared library
+	/// `ELIBACC`: "Can not access a needed shared library" error from errno.h in Linux.
 	static const int elibacc = 79; // Can not access a needed shared library
 
-	/// Accessing a corrupted shared library
+	/// `ELIBBAD`: "Accessing a corrupted shared library" error from errno.h in Linux.
 	static const int elibbad = 80; // Accessing a corrupted shared library
 
-	/// .lib section in a.out corrupted
+	/// `ELIBSCN`: ".lib section in a.out corrupted" error from errno.h in Linux.
 	static const int elibscn = 81; // .lib section in a.out corrupted
 
-	/// Attempting to link in too many shared libraries
+	/// `ELIBMAX`: "Attempting to link in too many shared libraries" error from errno.h in Linux.
 	static const int elibmax = 82; // Attempting to link in too many shared libraries
 
-	/// Cannot exec a shared library directly
+	/// `ELIBEXEC`: "Cannot exec a shared library directly" error from errno.h in Linux.
 	static const int elibexec = 83; // Cannot exec a shared library directly
 
-	/// Illegal byte sequence
+	/// `EILSEQ`: "Illegal byte sequence" error from errno.h in Linux.
 	static const int eilseq = 84; // Illegal byte sequence
 
-	/// Interrupted system call should be restarted
+	/// `ERESTART`: "Interrupted system call should be restarted" error from errno.h in Linux.
 	static const int erestart = 85; // Interrupted system call should be restarted
 
-	/// Streams pipe error
+	/// `ESTRPIPE`: "Streams pipe error" error from errno.h in Linux.
 	static const int estrpipe = 86; // Streams pipe error
 
-	/// Too many users
+	/// `EUSERS`: "Too many users" error from errno.h in Linux.
 	static const int eusers = 87; // Too many users
 
-	/// Socket operation on non-socket
+	/// `ENOTSOCK`: "Socket operation on non-socket" error from errno.h in Linux.
 	static const int enotsock = 88; // Socket operation on non-socket
 
-	/// Destination address required
+	/// `EDESTADDRREQ`: "Destination address required" error from errno.h in Linux.
 	static const int edestaddrreq = 89; // Destination address required
 
-	/// Message too long
+	/// `EMSGSIZE`: "Message too long" error from errno.h in Linux.
 	static const int emsgsize = 90; // Message too long
 
-	/// Protocol wrong type for socket
+	/// `EPROTOTYPE`: "Protocol wrong type for socket" error from errno.h in Linux.
 	static const int eprototype = 91; // Protocol wrong type for socket
 
-	/// Protocol not available
+	/// `ENOPROTOOPT`: "Protocol not available" error from errno.h in Linux.
 	static const int enoprotoopt = 92; // Protocol not available
 
-	/// Protocol not supported
+	/// `EPROTONOSUPPORT`: "Protocol not supported" error from errno.h in Linux.
 	static const int eprotonosupport = 93; // Protocol not supported
 
-	/// Socket type not supported
+	/// `ESOCKTNOSUPPORT`: "Socket type not supported" error from errno.h in Linux.
 	static const int esocktnosupport = 94; // Socket type not supported
 
-	/// Operation not supported on transport endpoint
+	/// `EOPNOTSUPP`: "Operation not supported on transport endpoint" error from errno.h in Linux.
 	static const int eopnotsupp = 95; // Operation not supported on transport endpoint
 
-	/// Protocol family not supported
+	/// `EPFNOSUPPORT`: "Protocol family not supported" error from errno.h in Linux.
 	static const int epfnosupport = 96; // Protocol family not supported
 
-	/// Address family not supported by protocol
+	/// `EAFNOSUPPORT`: "Address family not supported by protocol" error from errno.h in Linux.
 	static const int eafnosupport = 97; // Address family not supported by protocol
 
-	/// Address already in use
+	/// `EADDRINUSE`: "Address already in use" error from errno.h in Linux.
 	static const int eaddrinuse = 98; // Address already in use
 
-	/// Cannot assign requested address
+	/// `EADDRNOTAVAIL`: "Cannot assign requested address" error from errno.h in Linux.
 	static const int eaddrnotavail = 99; // Cannot assign requested address
 
-	/// Network is down
+	/// `ENETDOWN`: "Network is down" error from errno.h in Linux.
 	static const int enetdown = 100; // Network is down
 
-	/// Network is unreachable
+	/// `ENETUNREACH`: "Network is unreachable" error from errno.h in Linux.
 	static const int enetunreach = 101; // Network is unreachable
 
-	/// Network dropped connection because of reset
+	/// `ENETRESET`: "Network dropped connection because of reset" error from errno.h in Linux.
 	static const int enetreset = 102; // Network dropped connection because of reset
 
-	/// Software caused connection abort
+	/// `ECONNABORTED`: "Software caused connection abort" error from errno.h in Linux.
 	static const int econnaborted = 103; // Software caused connection abort
 
-	/// Connection reset by peer
+	/// `ECONNRESET`: "Connection reset by peer" error from errno.h in Linux.
 	static const int econnreset = 104; // Connection reset by peer
 
-	/// No buffer space available
+	/// `ENOBUFS`: "No buffer space available" error from errno.h in Linux.
 	static const int enobufs = 105; // No buffer space available
 
-	/// Transport endpoint is already connected
+	/// `EISCONN`: "Transport endpoint is already connected" error from errno.h in Linux.
 	static const int eisconn = 106; // Transport endpoint is already connected
 
-	/// Transport endpoint is not connected
+	/// `ENOTCONN`: "Transport endpoint is not connected" error from errno.h in Linux.
 	static const int enotconn = 107; // Transport endpoint is not connected
 
-	/// Cannot send after transport endpoint shutdown
+	/// `ESHUTDOWN`: "Cannot send after transport endpoint shutdown" error from errno.h in Linux.
 	static const int eshutdown = 108; // Cannot send after transport endpoint shutdown
 
-	/// Too many references: cannot splice
+	/// `ETOOMANYREFS`: "Too many references: cannot splice" error from errno.h in Linux.
 	static const int etoomanyrefs = 109; // Too many references: cannot splice
 
-	/// Connection timed out
+	/// `ETIMEDOUT`: "Connection timed out" error from errno.h in Linux.
 	static const int etimedout = 110; // Connection timed out
 
-	/// Connection refused
+	/// `ECONNREFUSED`: "Connection refused" error from errno.h in Linux.
 	static const int econnrefused = 111; // Connection refused
 
-	/// Host is down
+	/// `EHOSTDOWN`: "Host is down" error from errno.h in Linux.
 	static const int ehostdown = 112; // Host is down
 
-	/// No route to host
+	/// `EHOSTUNREACH`: "No route to host" error from errno.h in Linux.
 	static const int ehostunreach = 113; // No route to host
 
-	/// Operation already in progress
+	/// `EALREADY`: "Operation already in progress" error from errno.h in Linux.
 	static const int ealready = 114; // Operation already in progress
 
-	/// Operation now in progress
+	/// `EINPROGRESS`: "Operation now in progress" error from errno.h in Linux.
 	static const int einprogress = 115; // Operation now in progress
 
-	/// Stale file handle
+	/// `ESTALE`: "Stale file handle" error from errno.h in Linux.
 	static const int estale = 116; // Stale file handle
 
-	/// Structure needs cleaning
+	/// `EUCLEAN`: "Structure needs cleaning" error from errno.h in Linux.
 	static const int euclean = 117; // Structure needs cleaning
 
-	/// Not a XENIX named type file
+	/// `ENOTNAM`: "Not a XENIX named type file" error from errno.h in Linux.
 	static const int enotnam = 118; // Not a XENIX named type file
 
-	/// No XENIX semaphores available
+	/// `ENAVAIL`: "No XENIX semaphores available" error from errno.h in Linux.
 	static const int enavail = 119; // No XENIX semaphores available
 
-	/// Is a named type file
+	/// `EISNAM`: "Is a named type file" error from errno.h in Linux.
 	static const int eisnam = 120; // Is a named type file
 
-	/// Remote I/O error
+	/// `EREMOTEIO`: "Remote I/O error" error from errno.h in Linux.
 	static const int eremoteio = 121; // Remote I/O error
 
-	/// Quota exceeded
+	/// `EDQUOT`: "Quota exceeded" error from errno.h in Linux.
 	static const int edquot = 122; // Quota exceeded
 	
-	/// No medium found
+	/// `ENOMEDIUM`: "No medium found" error from errno.h in Linux.
 	static const int enomedium = 123; // No medium found
 
-	/// Wrong medium type
+	/// `EMEDIUMTYPE`: "Wrong medium type" error from errno.h in Linux.
 	static const int emediumtype = 124; // Wrong medium type
 
-	/// Operation Canceled
+	/// `ECANCELED`: "Operation Canceled" error from errno.h in Linux.
 	static const int ecanceled = 125; // Operation Canceled
 
-	/// Required key not available
+	/// `ENOKEY`: "Required key not available" error from errno.h in Linux.
 	static const int enokey = 126; // Required key not available
 
-	/// Key has expired
+	/// `EKEYEXPIRED`: "Key has expired" error from errno.h in Linux.
 	static const int ekeyexpired = 127; // Key has expired
 
-	/// Key has been revoked
+	/// `EKEYREVOKED`: "Key has been revoked" error from errno.h in Linux.
 	static const int ekeyrevoked = 128; // Key has been revoked
 
-	/// Key was rejected by service
+	/// `EKEYREJECTED`: "Key was rejected by service" error from errno.h in Linux.
 	static const int ekeyrejected = 129; // Key was rejected by service
 	
 	// for robust mutexes
 
-	/// Owner died
+	/// `EOWNERDEAD`: "Owner died" error from errno.h in Linux.
 	static const int eownerdead = 130; // Owner died
 
-	/// State not recoverable
+	/// `ENOTRECOVERABLE`: "State not recoverable" error from errno.h in Linux.
 	static const int enotrecoverable = 131; // State not recoverable
 	
-	/// Operation not possible due to RF-kill
+	/// `ERFKILL`: "Operation not possible due to RF-kill" error from errno.h in Linux.
 	static const int erfkill = 132; // Operation not possible due to RF-kill
 	
-	/// Memory page has hardware error
+	/// `EHWPOISON`: "Memory page has hardware error" error from errno.h in Linux.
 	static const int ehwpoison = 133; // Memory page has hardware error
 	
 
-	//// THE FOLLOWING CONSTANTS ARE NOT FROM ERRNO.H ////
+	// THE FOLLOWING CONSTANTS ARE NOT FROM ERRNO.H //
 
 	// These constants are added for code readability
 	// as they are more consistent with the Dart naming standards
 
-	/// EPERM: Operation not permitted
+	/// Alias for `EPERM` from errno.h in Linux.
+	/// "Operation not permitted" error.
 	static const int operationNotPermitted = eperm;
 
-	/// ENOENT: No such file or directory
+	/// Alias for `ENOENT` from errno.h in Linux.
+	/// "No such file or directory" error.
 	static const int noSuchFileOrDirectory = enoent;
 
-	/// ESRCH: No such process
+	/// Alias for `ESRCH` from errno.h in Linux.
+	/// "No such process" error.
 	static const int noSuchProcess = esrch;
 
-	/// EINTR: Interrupted system call
+	/// Alias for `EINTR` from errno.h in Linux.
+	/// "Interrupted system call" error.
 	static const int interruptedSystemCall = eintr;
 
-	/// EIO: I/O error
+	/// Alias for `EIO` from errno.h in Linux.
+	/// "I/O error" error.
 	static const int ioError = eio;
 
-	/// ENXIO: No such device or address
+	/// Alias for `ENXIO` from errno.h in Linux.
+	/// "No such device or address" error.
 	static const int noSuchDeviceOrAddress = enxio;
 
-	/// E2BIG: Argument list too long
+	/// Alias for `E2BIG` from errno.h in Linux.
+	/// "Argument list too long" error.
 	static const int argumentListTooLong = e2big;
 
-	/// ENOEXEC: Exec format error
+	/// Alias for `ENOEXEC` from errno.h in Linux.
+	/// "Exec format error" error.
 	static const int execFormatError = enoexec;
 
-	/// EBADF: Bad file number
+	/// Alias for `EBADF` from errno.h in Linux.
+	/// "Bad file number" error.
 	static const int badFileNumber = ebadf;
 
-	/// ECHILD: No child processes
+	/// Alias for `ECHILD` from errno.h in Linux.
+	/// "No child processes" error.
 	static const int noChildProcesses = echild;
 
-	/// EAGAIN: Try again
+	/// Alias for `EAGAIN` from errno.h in Linux.
+	/// "Try again" error.
 	static const int tryAgain = eagain;
 
-	/// ENOMEM: Out of memory
+	/// Alias for `ENOMEM` from errno.h in Linux.
+	/// "Out of memory" error.
 	static const int outOfMemory = enomem;
 
-	/// EACCES: Permission denied
+	/// Alias for `EACCES` from errno.h in Linux.
+	/// "Permission denied" error.
 	static const int permissionDenied = eacces;
 
-	/// EFAULT: Bad address
+	/// Alias for `EFAULT` from errno.h in Linux.
+	/// "Bad address" error.
 	static const int badAddress = efault;
 
-	/// ENOTBLK: Block device required
+	/// Alias for `ENOTBLK` from errno.h in Linux.
+	/// "Block device required" error.
 	static const int blockDeviceRequired = enotblk;
 
-	/// EBUSY: Device or resource busy
+	/// Alias for `EBUSY` from errno.h in Linux.
+	/// "Device or resource busy" error.
 	static const int deviceOrResourceBusy = ebusy;
 
-	/// EEXIST: File exists
+	/// Alias for `EEXIST` from errno.h in Linux.
+	/// "File exists" error.
 	static const int fileExists = eexist;
 
-	/// EXDEV: Cross-device link
+	/// Alias for `EXDEV` from errno.h in Linux.
+	/// "Cross-device link" error.
 	static const int crossDeviceLink = exdev;
 
-	/// ENODEV: No such device
+	/// Alias for `ENODEV` from errno.h in Linux.
+	/// "No such device" error.
 	static const int noSuchDevice = enodev;
 
-	/// ENOTDIR: Not a directory
+	/// Alias for `ENOTDIR` from errno.h in Linux.
+	/// "Not a directory" error.
 	static const int notDirectory = enotdir;
 
-	/// EISDIR: Is a directory
+	/// Alias for `EISDIR` from errno.h in Linux.
+	/// "Is a directory" error.
 	static const int isDirectory = eisdir;
 
-	/// EINVAL: Invalid argument
+	/// Alias for `EINVAL` from errno.h in Linux.
+	/// "Invalid argument" error.
 	static const int invalidArgument = einval;
 
-	/// ENFILE: File table overflow
+	/// Alias for `ENFILE` from errno.h in Linux.
+	/// "File table overflow" error.
 	static const int fileTableOverflow = enfile;
 
-	/// EMFILE: Too many open files
+	/// Alias for `EMFILE` from errno.h in Linux.
+	/// "Too many open files" error.
 	static const int tooManyOpenFiles = emfile;
 
-	/// ENOTTY: Not a typewriter
+	/// Alias for `ENOTTY` from errno.h in Linux.
+	/// "Not a typewriter" error.
 	static const int notTypewriter = enotty;
 
-	/// ETXTBSY: Text file busy
+	/// Alias for `ETXTBSY` from errno.h in Linux.
+	/// "Text file busy" error.
 	static const int textFileBusy = etxtbsy;
 
-	/// EFBIG: File too large
+	/// Alias for `EFBIG` from errno.h in Linux.
+	/// "File too large" error.
 	static const int fileTooLarge = efbig;
 
-	/// ENOSPC: No space left on device
+	/// Alias for `ENOSPC` from errno.h in Linux.
+	/// "No space left on device" error.
 	static const int noSpaceLeftOnDevice = enospc;
 
-	/// ESPIPE: Illegal seek
+	/// Alias for `ESPIPE` from errno.h in Linux.
+	/// "Illegal seek" error.
 	static const int illegalSeek = espipe;
 
-	/// EROFS: Read-only file system
+	/// Alias for `EROFS` from errno.h in Linux.
+	/// "Read-only file system" error.
 	static const int readOnlyFileSystem = erofs;
 
-	/// EMLINK: Too many links
+	/// Alias for `EMLINK` from errno.h in Linux.
+	/// "Too many links" error.
 	static const int tooManyLinks = emlink;
 
-	/// EPIPE: Broken pipe
+	/// Alias for `EPIPE` from errno.h in Linux.
+	/// "Broken pipe" error.
 	static const int brokenPipe = epipe;
 
-	/// EDOM: Math argument out of domain of func
+	/// Alias for `EDOM` from errno.h in Linux.
+	/// "Math argument out of domain of func" error.
 	static const int mathArgumentOutOfDomainOfFunc = edom;
 
-	/// ERANGE: Math result not representable
+	/// Alias for `ERANGE` from errno.h in Linux.
+	/// "Math result not representable" error.
 	static const int mathResultNotRepresentable = erange;
 
-	/// EDEADLK: Resource deadlock would occur
+	/// Alias for `EDEADLK` from errno.h in Linux.
+	/// "Resource deadlock would occur" error.
 	static const int resourceDeadlockWouldOccur = edeadlk;
 
-	/// ENAMETOOLONG: File name too long
+	/// Alias for `ENAMETOOLONG` from errno.h in Linux.
+	/// "File name too long" error.
 	static const int fileNameTooLong = enametoolong;
 
-	/// ENOLCK: No record locks available
+	/// Alias for `ENOLCK` from errno.h in Linux.
+	/// "No record locks available" error.
 	static const int noRecordLocksAvailable = enolck;
 
-	/// ENOSYS: Invalid system call number
+	/// Alias for `ENOSYS` from errno.h in Linux.
+	/// "Invalid system call number" error.
 	static const int invalidSystemCallNumber = enosys;
 
-	/// ENOTEMPTY: Directory not empty
+	/// Alias for `ENOTEMPTY` from errno.h in Linux.
+	/// "Directory not empty" error.
 	static const int directoryNotEmpty = enotempty;
 
-	/// ELOOP: Too many symbolic links encountered
+	/// Alias for `ELOOP` from errno.h in Linux.
+	/// "Too many symbolic links encountered" error.
 	static const int tooManySymbolicLinksEncountered = eloop;
 
-	/// EWOULDBLOCK: Operation would block
+	/// Alias for `EWOULDBLOCK` from errno.h in Linux.
+	/// "Operation would block" error.
 	static const int operationWouldBlock = ewouldblock;
 
-	/// ENOMSG: No message of desired type
+	/// Alias for `ENOMSG` from errno.h in Linux.
+	/// "No message of desired type" error.
 	static const int noMessageOfDesiredType = enomsg;
 
-	/// EIDRM: Identifier removed
+	/// Alias for `EIDRM` from errno.h in Linux.
+	/// "Identifier removed" error.
 	static const int identifierRemoved = eidrm;
 
-	/// ECHRNG: Channel number out of range
+	/// Alias for `ECHRNG` from errno.h in Linux.
+	/// "Channel number out of range" error.
 	static const int channelNumberOutOfRange = echrng;
 
-	/// EL2NSYNC: Level 2 not synchronized
+	/// Alias for `EL2NSYNC` from errno.h in Linux.
+	/// "Level 2 not synchronized" error.
 	static const int level2NotSynchronized = el2nsync;
 
-	/// EL3HLT: Level 3 halted
+	/// Alias for `EL3HLT` from errno.h in Linux.
+	/// "Level 3 halted" error.
 	static const int level3Halted = el3hlt;
 
-	/// EL3RST: Level 3 reset
+	/// Alias for `EL3RST` from errno.h in Linux.
+	/// "Level 3 reset" error.
 	static const int level3Reset = el3rst;
 
-	/// ELNRNG: Link number out of range
+	/// Alias for `ELNRNG` from errno.h in Linux.
+	/// "Link number out of range" error.
 	static const int linkNumberOutOfRange = elnrng;
 
-	/// EUNATCH: Protocol driver not attached
+	/// Alias for `EUNATCH` from errno.h in Linux.
+	/// "Protocol driver not attached" error.
 	static const int protocolDriverNotAttached = eunatch;
 
-	/// ENOCSI: No CSI structure available
+	/// Alias for `ENOCSI` from errno.h in Linux.
+	/// "No CSI structure available" error.
 	static const int noCsiStructureAvailable = enocsi;
 
-	/// EL2HLT: Level 2 halted
+	/// Alias for `EL2HLT` from errno.h in Linux.
+	/// "Level 2 halted" error.
 	static const int level2Halted = el2hlt;
 
-	/// EBADE: Invalid exchange
+	/// Alias for `EBADE` from errno.h in Linux.
+	/// "Invalid exchange" error.
 	static const int invalidExchange = ebade;
 
-	/// EBADR: Invalid request descriptor
+	/// Alias for `EBADR` from errno.h in Linux.
+	/// "Invalid request descriptor" error.
 	static const int invalidRequestDescriptor = ebadr;
 
-	/// EXFULL: Exchange full
+	/// Alias for `EXFULL` from errno.h in Linux.
+	/// "Exchange full" error.
 	static const int exchangeFull = exfull;
 
-	/// ENOANO: No anode
+	/// Alias for `ENOANO` from errno.h in Linux.
+	/// "No anode" error.
 	static const int noAnode = enoano;
 
-	/// EBADRQC: Invalid request code
+	/// Alias for `EBADRQC` from errno.h in Linux.
+	/// "Invalid request code" error.
 	static const int invalidRequestCode = ebadrqc;
 
-	/// EBADSLT: Invalid slot
+	/// Alias for `EBADSLT` from errno.h in Linux.
+	/// "Invalid slot" error.
 	static const int invalidSlot = ebadslt;
 
-	/// EBFONT: Bad font file format
+	/// Alias for `EBFONT` from errno.h in Linux.
+	/// "Bad font file format" error.
 	static const int badFontFileFormat = ebfont;
 
-	/// ENOSTR: Device not a stream
+	/// Alias for `ENOSTR` from errno.h in Linux.
+	/// "Device not a stream" error.
 	static const int deviceNotStream = enostr;
 
-	/// ENODATA: No data available
+	/// Alias for `ENODATA` from errno.h in Linux.
+	/// "No data available" error.
 	static const int noDataAvailable = enodata;
 
-	/// ETIME: Timer expired
+	/// Alias for `ETIME` from errno.h in Linux.
+	/// "Timer expired" error.
 	static const int timerExpired = etime;
 
-	/// ENOSR: Out of streams resources
+	/// Alias for `ENOSR` from errno.h in Linux.
+	/// "Out of streams resources" error.
 	static const int outOfStreamsResources = enosr;
 
-	/// ENONET: Machine is not on the network
+	/// Alias for `ENONET` from errno.h in Linux.
+	/// "Machine is not on the network" error.
 	static const int machineIsNotOnTheNetwork = enonet;
 
-	/// ENOPKG: Package not installed
+	/// Alias for `ENOPKG` from errno.h in Linux.
+	/// "Package not installed" error.
 	static const int packageNotInstalled = enopkg;
 
-	/// EREMOTE: Object is remote
+	/// Alias for `EREMOTE` from errno.h in Linux.
+	/// "Object is remote" error.
 	static const int objectIsRemote = eremote;
 
-	/// ENOLINK: Link has been severed
+	/// Alias for `ENOLINK` from errno.h in Linux.
+	/// "Link has been severed" error.
 	static const int linkHasBeenSevered = enolink;
 
-	/// EADV: Advertise error
+	/// Alias for `EADV` from errno.h in Linux.
+	/// "Advertise error" error.
 	static const int advertiseError = eadv;
 
-	/// ESRMNT: Srmount error
+	/// Alias for `ESRMNT` from errno.h in Linux.
+	/// "Srmount error" error.
 	static const int srmountError = esrmnt;
 
-	/// ECOMM: Communication error on send
+	/// Alias for `ECOMM` from errno.h in Linux.
+	/// "Communication error on send" error.
 	static const int communicationErrorOnSend = ecomm;
 
-	/// EPROTO: Protocol error
+	/// Alias for `EPROTO` from errno.h in Linux.
+	/// "Protocol error" error.
 	static const int protocolError = eproto;
 
-	/// EMULTIHOP: Multihop attempted
+	/// Alias for `EMULTIHOP` from errno.h in Linux.
+	/// "Multihop attempted" error.
 	static const int multihopAttempted = emultihop;
 
-	/// EDOTDOT: RFS specific error
+	/// Alias for `EDOTDOT` from errno.h in Linux.
+	/// "RFS specific error" error.
 	static const int rfsSpecificError = edotdot;
 
-	/// EBADMSG: Not a data message
+	/// Alias for `EBADMSG` from errno.h in Linux.
+	/// "Not a data message" error.
 	static const int notDataMessage = ebadmsg;
 
-	/// EOVERFLOW: Value too large for defined data type
+	/// Alias for `EOVERFLOW` from errno.h in Linux.
+	/// "Value too large for defined data type" error.
 	static const int valueTooLargeForDefinedDataType = eoverflow;
 
-	/// ENOTUNIQ: Name not unique on network
+	/// Alias for `ENOTUNIQ` from errno.h in Linux.
+	/// "Name not unique on network" error.
 	static const int nameNotUniqueOnNetwork = enotuniq;
 
-	/// EBADFD: File descriptor in bad state
+	/// Alias for `EBADFD` from errno.h in Linux.
+	/// "File descriptor in bad state" error.
 	static const int fileDescriptorInBadState = ebadfd;
 
-	/// EREMCHG: Remote address changed
+	/// Alias for `EREMCHG` from errno.h in Linux.
+	/// "Remote address changed" error.
 	static const int remoteAddressChanged = eremchg;
 
-	/// ELIBACC: Can not access a needed shared library
+	/// Alias for `ELIBACC` from errno.h in Linux.
+	/// "Can not access a needed shared library" error.
 	static const int canNotAccessNeededSharedLibrary = elibacc;
 
-	/// ELIBBAD: Accessing a corrupted shared library
+	/// Alias for `ELIBBAD` from errno.h in Linux.
+	/// "Accessing a corrupted shared library" error.
 	static const int accessingCorruptedSharedLibrary = elibbad;
 
-	/// ELIBSCN: .lib section in a.out corrupted
+	/// Alias for `ELIBSCN` from errno.h in Linux.
+	/// ".lib section in a.out corrupted" error.
 	static const int libSectionInOutCorrupted = elibscn;
 
-	/// ELIBMAX: Attempting to link in too many shared libraries
+	/// Alias for `ELIBMAX` from errno.h in Linux.
+	/// "Attempting to link in too many shared libraries" error.
 	static const int attemptingToLinkInTooManySharedLibraries = elibmax;
 
-	/// ELIBEXEC: Cannot exec a shared library directly
+	/// Alias for `ELIBEXEC` from errno.h in Linux.
+	/// "Cannot exec a shared library directly" error.
 	static const int cannotExecSharedLibraryDirectly = elibexec;
 
-	/// EILSEQ: Illegal byte sequence
+	/// Alias for `EILSEQ` from errno.h in Linux.
+	/// "Illegal byte sequence" error.
 	static const int illegalByteSequence = eilseq;
 
-	/// ERESTART: Interrupted system call should be restarted
+	/// Alias for `ERESTART` from errno.h in Linux.
+	/// "Interrupted system call should be restarted" error.
 	static const int interruptedSystemCallShouldBeRestarted = erestart;
 
-	/// ESTRPIPE: Streams pipe error
+	/// Alias for `ESTRPIPE` from errno.h in Linux.
+	/// "Streams pipe error" error.
 	static const int streamsPipeError = estrpipe;
 
-	/// EUSERS: Too many users
+	/// Alias for `EUSERS` from errno.h in Linux.
+	/// "Too many users" error.
 	static const int tooManyUsers = eusers;
 
-	/// ENOTSOCK: Socket operation on non-socket
+	/// Alias for `ENOTSOCK` from errno.h in Linux.
+	/// "Socket operation on non-socket" error.
 	static const int socketOperationOnNonSocket = enotsock;
 
-	/// EDESTADDRREQ: Destination address required
+	/// Alias for `EDESTADDRREQ` from errno.h in Linux.
+	/// "Destination address required" error.
 	static const int destinationAddressRequired = edestaddrreq;
 
-	/// EMSGSIZE: Message too long
+	/// Alias for `EMSGSIZE` from errno.h in Linux.
+	/// "Message too long" error.
 	static const int messageTooLong = emsgsize;
 
-	/// EPROTOTYPE: Protocol wrong type for socket
+	/// Alias for `EPROTOTYPE` from errno.h in Linux.
+	/// "Protocol wrong type for socket" error.
 	static const int protocolWrongTypeForSocket = eprototype;
 
-	/// ENOPROTOOPT: Protocol not available
+	/// Alias for `ENOPROTOOPT` from errno.h in Linux.
+	/// "Protocol not available" error.
 	static const int protocolNotAvailable = enoprotoopt;
 
-	/// EPROTONOSUPPORT: Protocol not supported
+	/// Alias for `EPROTONOSUPPORT` from errno.h in Linux.
+	/// "Protocol not supported" error.
 	static const int protocolNotSupported = eprotonosupport;
 
-	/// ESOCKTNOSUPPORT: Socket type not supported
+	/// Alias for `ESOCKTNOSUPPORT` from errno.h in Linux.
+	/// "Socket type not supported" error.
 	static const int socketTypeNotSupported = esocktnosupport;
 
-	/// EOPNOTSUPP: Operation not supported on transport endpoint
+	/// Alias for `EOPNOTSUPP` from errno.h in Linux.
+	/// "Operation not supported on transport endpoint" error.
 	static const int operationNotSupportedOnTransportEndpoint = eopnotsupp;
 
-	/// EPFNOSUPPORT: Protocol family not supported
+	/// Alias for `EPFNOSUPPORT` from errno.h in Linux.
+	/// "Protocol family not supported" error.
 	static const int protocolFamilyNotSupported = epfnosupport;
 
-	/// EAFNOSUPPORT: Address family not supported by protocol
+	/// Alias for `EAFNOSUPPORT` from errno.h in Linux.
+	/// "Address family not supported by protocol" error.
 	static const int addressFamilyNotSupportedByProtocol = eafnosupport;
 
-	/// EADDRINUSE: Address already in use
+	/// Alias for `EADDRINUSE` from errno.h in Linux.
+	/// "Address already in use" error.
 	static const int addressAlreadyInUse = eaddrinuse;
 
-	/// EADDRNOTAVAIL: Cannot assign requested address
+	/// Alias for `EADDRNOTAVAIL` from errno.h in Linux.
+	/// "Cannot assign requested address" error.
 	static const int cannotAssignRequestedAddress = eaddrnotavail;
 
-	/// ENETDOWN: Network is down
+	/// Alias for `ENETDOWN` from errno.h in Linux.
+	/// "Network is down" error.
 	static const int networkIsDown = enetdown;
 
-	/// ENETUNREACH: Network is unreachable
+	/// Alias for `ENETUNREACH` from errno.h in Linux.
+	/// "Network is unreachable" error.
 	static const int networkIsUnreachable = enetunreach;
 
-	/// ENETRESET: Network dropped connection because of reset
+	/// Alias for `ENETRESET` from errno.h in Linux.
+	/// "Network dropped connection because of reset" error.
 	static const int networkDroppedConnectionBecauseOfReset = enetreset;
 
-	/// ECONNABORTED: Software caused connection abort
+	/// Alias for `ECONNABORTED` from errno.h in Linux.
+	/// "Software caused connection abort" error.
 	static const int softwareCausedConnectionAbort = econnaborted;
 
-	/// ECONNRESET: Connection reset by peer
+	/// Alias for `ECONNRESET` from errno.h in Linux.
+	/// "Connection reset by peer" error.
 	static const int connectionResetByPeer = econnreset;
 
-	/// ENOBUFS: No buffer space available
+	/// Alias for `ENOBUFS` from errno.h in Linux.
+	/// "No buffer space available" error.
 	static const int noBufferSpaceAvailable = enobufs;
 
-	/// EISCONN: Transport endpoint is already connected
+	/// Alias for `EISCONN` from errno.h in Linux.
+	/// "Transport endpoint is already connected" error.
 	static const int transportEndpointIsAlreadyConnected = eisconn;
 
-	/// ENOTCONN: Transport endpoint is not connected
+	/// Alias for `ENOTCONN` from errno.h in Linux.
+	/// "Transport endpoint is not connected" error.
 	static const int transportEndpointIsNotConnected = enotconn;
 
-	/// ESHUTDOWN: Cannot send after transport endpoint shutdown
+	/// Alias for `ESHUTDOWN` from errno.h in Linux.
+	/// "Cannot send after transport endpoint shutdown" error.
 	static const int cannotSendAfterTransportEndpointShutdown = eshutdown;
 
-	/// ETOOMANYREFS: Too many references: cannot splice
+	/// Alias for `ETOOMANYREFS` from errno.h in Linux.
+	/// "Too many references: cannot splice" error.
 	static const int tooManyReferencesCannotSplice = etoomanyrefs;
 
-	/// ETIMEDOUT: Connection timed out
+	/// Alias for `ETIMEDOUT` from errno.h in Linux.
+	/// "Connection timed out" error.
 	static const int connectionTimedOut = etimedout;
 
-	/// ECONNREFUSED: Connection refused
+	/// Alias for `ECONNREFUSED` from errno.h in Linux.
+	/// "Connection refused" error.
 	static const int connectionRefused = econnrefused;
 
-	/// EHOSTDOWN: Host is down
+	/// Alias for `EHOSTDOWN` from errno.h in Linux.
+	/// "Host is down" error.
 	static const int hostIsDown = ehostdown;
 
-	/// EHOSTUNREACH: No route to host
+	/// Alias for `EHOSTUNREACH` from errno.h in Linux.
+	/// "No route to host" error.
 	static const int noRouteToHost = ehostunreach;
 
-	/// EALREADY: Operation already in progress
+	/// Alias for `EALREADY` from errno.h in Linux.
+	/// "Operation already in progress" error.
 	static const int operationAlreadyInProgress = ealready;
 
-	/// EINPROGRESS: Operation now in progress
+	/// Alias for `EINPROGRESS` from errno.h in Linux.
+	/// "Operation now in progress" error.
 	static const int operationNowInProgress = einprogress;
 
-	/// ESTALE: Stale file handle
+	/// Alias for `ESTALE` from errno.h in Linux.
+	/// "Stale file handle" error.
 	static const int staleFileHandle = estale;
 
-	/// EUCLEAN: Structure needs cleaning
+	/// Alias for `EUCLEAN` from errno.h in Linux.
+	/// "Structure needs cleaning" error.
 	static const int structureNeedsCleaning = euclean;
 
-	/// ENOTNAM: Not a XENIX named type file
+	/// Alias for `ENOTNAM` from errno.h in Linux.
+	/// "Not a XENIX named type file" error.
 	static const int notXenixNamedTypeFile = enotnam;
 
-	/// ENAVAIL: No XENIX semaphores available
+	/// Alias for `ENAVAIL` from errno.h in Linux.
+	/// "No XENIX semaphores available" error.
 	static const int noXenixSemaphoresAvailable = enavail;
 
-	/// EISNAM: Is a named type file
+	/// Alias for `EISNAM` from errno.h in Linux.
+	/// "Is a named type file" error.
 	static const int isNamedTypeFile = eisnam;
 
-	/// EREMOTEIO: Remote I/O error
+	/// Alias for `EREMOTEIO` from errno.h in Linux.
+	/// "Remote I/O error" error.
 	static const int remoteIoError = eremoteio;
 
-	/// EDQUOT: Quota exceeded
+	/// Alias for `EDQUOT` from errno.h in Linux.
+	/// "Quota exceeded" error.
 	static const int quotaExceeded = edquot;
 
-	/// ENOMEDIUM: No medium found
+	/// Alias for `ENOMEDIUM` from errno.h in Linux.
+	/// "No medium found" error.
 	static const int noMediumFound = enomedium;
 
-	/// EMEDIUMTYPE: Wrong medium type
+	/// Alias for `EMEDIUMTYPE` from errno.h in Linux.
+	/// "Wrong medium type" error.
 	static const int wrongMediumType = emediumtype;
 
-	/// ECANCELED: Operation Canceled
+	/// Alias for `ECANCELED` from errno.h in Linux.
+	/// "Operation Canceled" error.
 	static const int operationCanceled = ecanceled;
 
-	/// ENOKEY: Required key not available
+	/// Alias for `ENOKEY` from errno.h in Linux.
+	/// "Required key not available" error.
 	static const int requiredKeyNotAvailable = enokey;
 
-	/// EKEYEXPIRED: Key has expired
+	/// Alias for `EKEYEXPIRED` from errno.h in Linux.
+	/// "Key has expired" error.
 	static const int keyHasExpired = ekeyexpired;
 
-	/// EKEYREVOKED: Key has been revoked
+	/// Alias for `EKEYREVOKED` from errno.h in Linux.
+	/// "Key has been revoked" error.
 	static const int keyHasBeenRevoked = ekeyrevoked;
 
-	/// EKEYREJECTED: Key was rejected by service
+	/// Alias for `EKEYREJECTED` from errno.h in Linux.
+	/// "Key was rejected by service" error.
 	static const int keyWasRejectedByService = ekeyrejected;
 
-	/// EOWNERDEAD: Owner died
+	/// Alias for `EOWNERDEAD` from errno.h in Linux.
+	/// "Owner died" error.
 	static const int ownerDied = eownerdead;
 
-	/// ENOTRECOVERABLE: State not recoverable
+	/// Alias for `ENOTRECOVERABLE` from errno.h in Linux.
+	/// "State not recoverable" error.
 	static const int stateNotRecoverable = enotrecoverable;
 
-	/// ERFKILL: Operation not possible due to RF-kill
+	/// Alias for `ERFKILL` from errno.h in Linux.
+	/// "Operation not possible due to RF-kill" error.
 	static const int operationNotPossibleDueToRfKill = erfkill;
 
-	/// EHWPOISON: Memory page has hardware error
+	/// Alias for `EHWPOISON` from errno.h in Linux.
+	/// "Memory page has hardware error" error.
 	static const int memoryPageHasHardwareError = ehwpoison;
 }

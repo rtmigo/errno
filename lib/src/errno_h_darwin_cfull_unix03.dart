@@ -86,672 +86,778 @@ class DarwinErrors {
 	// Error codes
 	
 	
-	/// Operation not permitted
+	/// `EPERM`: "Operation not permitted" error from errno.h in Darwin.
 	static const int eperm = 1; // Operation not permitted
 
-	/// No such file or directory
+	/// `ENOENT`: "No such file or directory" error from errno.h in Darwin.
 	static const int enoent = 2; // No such file or directory
 
-	/// No such process
+	/// `ESRCH`: "No such process" error from errno.h in Darwin.
 	static const int esrch = 3; // No such process
 
-	/// Interrupted system call
+	/// `EINTR`: "Interrupted system call" error from errno.h in Darwin.
 	static const int eintr = 4; // Interrupted system call
 
-	/// Input/output error
+	/// `EIO`: "Input/output error" error from errno.h in Darwin.
 	static const int eio = 5; // Input/output error
 
-	/// Device not configured
+	/// `ENXIO`: "Device not configured" error from errno.h in Darwin.
 	static const int enxio = 6; // Device not configured
 
-	/// Argument list too long
+	/// `E2BIG`: "Argument list too long" error from errno.h in Darwin.
 	static const int e2big = 7; // Argument list too long
 
-	/// Exec format error
+	/// `ENOEXEC`: "Exec format error" error from errno.h in Darwin.
 	static const int enoexec = 8; // Exec format error
 
-	/// Bad file descriptor
+	/// `EBADF`: "Bad file descriptor" error from errno.h in Darwin.
 	static const int ebadf = 9; // Bad file descriptor
 
-	/// No child processes
+	/// `ECHILD`: "No child processes" error from errno.h in Darwin.
 	static const int echild = 10; // No child processes
 
-	/// Resource deadlock avoided
+	/// `EDEADLK`: "Resource deadlock avoided" error from errno.h in Darwin.
 	static const int edeadlk = 11; // Resource deadlock avoided
 	// 11 was eagain
 
-	/// Cannot allocate memory
+	/// `ENOMEM`: "Cannot allocate memory" error from errno.h in Darwin.
 	static const int enomem = 12; // Cannot allocate memory
 
-	/// Permission denied
+	/// `EACCES`: "Permission denied" error from errno.h in Darwin.
 	static const int eacces = 13; // Permission denied
 
-	/// Bad address
+	/// `EFAULT`: "Bad address" error from errno.h in Darwin.
 	static const int efault = 14; // Bad address
 
-	/// Block device required
+	/// `ENOTBLK`: "Block device required" error from errno.h in Darwin.
 	static const int enotblk = 15; // Block device required
 
-	/// Device / Resource busy
+	/// `EBUSY`: "Device / Resource busy" error from errno.h in Darwin.
 	static const int ebusy = 16; // Device / Resource busy
 
-	/// File exists
+	/// `EEXIST`: "File exists" error from errno.h in Darwin.
 	static const int eexist = 17; // File exists
 
-	/// Cross-device link
+	/// `EXDEV`: "Cross-device link" error from errno.h in Darwin.
 	static const int exdev = 18; // Cross-device link
 
-	/// Operation not supported by device
+	/// `ENODEV`: "Operation not supported by device" error from errno.h in Darwin.
 	static const int enodev = 19; // Operation not supported by device
 
-	/// Not a directory
+	/// `ENOTDIR`: "Not a directory" error from errno.h in Darwin.
 	static const int enotdir = 20; // Not a directory
 
-	/// Is a directory
+	/// `EISDIR`: "Is a directory" error from errno.h in Darwin.
 	static const int eisdir = 21; // Is a directory
 
-	/// Invalid argument
+	/// `EINVAL`: "Invalid argument" error from errno.h in Darwin.
 	static const int einval = 22; // Invalid argument
 
-	/// Too many open files in system
+	/// `ENFILE`: "Too many open files in system" error from errno.h in Darwin.
 	static const int enfile = 23; // Too many open files in system
 
-	/// Too many open files
+	/// `EMFILE`: "Too many open files" error from errno.h in Darwin.
 	static const int emfile = 24; // Too many open files
 
-	/// Inappropriate ioctl for device
+	/// `ENOTTY`: "Inappropriate ioctl for device" error from errno.h in Darwin.
 	static const int enotty = 25; // Inappropriate ioctl for device
 
-	/// Text file busy
+	/// `ETXTBSY`: "Text file busy" error from errno.h in Darwin.
 	static const int etxtbsy = 26; // Text file busy
 
-	/// File too large
+	/// `EFBIG`: "File too large" error from errno.h in Darwin.
 	static const int efbig = 27; // File too large
 
-	/// No space left on device
+	/// `ENOSPC`: "No space left on device" error from errno.h in Darwin.
 	static const int enospc = 28; // No space left on device
 
-	/// Illegal seek
+	/// `ESPIPE`: "Illegal seek" error from errno.h in Darwin.
 	static const int espipe = 29; // Illegal seek
 
-	/// Read-only file system
+	/// `EROFS`: "Read-only file system" error from errno.h in Darwin.
 	static const int erofs = 30; // Read-only file system
 
-	/// Too many links
+	/// `EMLINK`: "Too many links" error from errno.h in Darwin.
 	static const int emlink = 31; // Too many links
 
-	/// Broken pipe
+	/// `EPIPE`: "Broken pipe" error from errno.h in Darwin.
 	static const int epipe = 32; // Broken pipe
 	
 	// math software
 
-	/// Numerical argument out of domain
+	/// `EDOM`: "Numerical argument out of domain" error from errno.h in Darwin.
 	static const int edom = 33; // Numerical argument out of domain
 
-	/// Result too large
+	/// `ERANGE`: "Result too large" error from errno.h in Darwin.
 	static const int erange = 34; // Result too large
 	
 	// non-blocking and interrupt i/o
 
-	/// Resource temporarily unavailable
+	/// `EAGAIN`: "Resource temporarily unavailable" error from errno.h in Darwin.
 	static const int eagain = 35; // Resource temporarily unavailable
 
-	/// Operation would block
+	/// `EWOULDBLOCK`: "Operation would block" error from errno.h in Darwin.
 	static const int ewouldblock = eagain; // Operation would block
 
-	/// Operation now in progress
+	/// `EINPROGRESS`: "Operation now in progress" error from errno.h in Darwin.
 	static const int einprogress = 36; // Operation now in progress
 
-	/// Operation already in progress
+	/// `EALREADY`: "Operation already in progress" error from errno.h in Darwin.
 	static const int ealready = 37; // Operation already in progress
 	
 	// ipc/network software -- argument errors
 
-	/// Socket operation on non-socket
+	/// `ENOTSOCK`: "Socket operation on non-socket" error from errno.h in Darwin.
 	static const int enotsock = 38; // Socket operation on non-socket
 
-	/// Destination address required
+	/// `EDESTADDRREQ`: "Destination address required" error from errno.h in Darwin.
 	static const int edestaddrreq = 39; // Destination address required
 
-	/// Message too long
+	/// `EMSGSIZE`: "Message too long" error from errno.h in Darwin.
 	static const int emsgsize = 40; // Message too long
 
-	/// Protocol wrong type for socket
+	/// `EPROTOTYPE`: "Protocol wrong type for socket" error from errno.h in Darwin.
 	static const int eprototype = 41; // Protocol wrong type for socket
 
-	/// Protocol not available
+	/// `ENOPROTOOPT`: "Protocol not available" error from errno.h in Darwin.
 	static const int enoprotoopt = 42; // Protocol not available
 
-	/// Protocol not supported
+	/// `EPROTONOSUPPORT`: "Protocol not supported" error from errno.h in Darwin.
 	static const int eprotonosupport = 43; // Protocol not supported
 
-	/// Socket type not supported
+	/// `ESOCKTNOSUPPORT`: "Socket type not supported" error from errno.h in Darwin.
 	static const int esocktnosupport = 44; // Socket type not supported
 
-	/// Operation not supported
+	/// `ENOTSUP`: "Operation not supported" error from errno.h in Darwin.
 	static const int enotsup = 45; // Operation not supported
 	
-	/// Protocol family not supported
+	/// `EPFNOSUPPORT`: "Protocol family not supported" error from errno.h in Darwin.
 	static const int epfnosupport = 46; // Protocol family not supported
 
-	/// Address family not supported by protocol family
+	/// `EAFNOSUPPORT`: "Address family not supported by protocol family" error from errno.h in Darwin.
 	static const int eafnosupport = 47; // Address family not supported by protocol family
 
-	/// Address already in use
+	/// `EADDRINUSE`: "Address already in use" error from errno.h in Darwin.
 	static const int eaddrinuse = 48; // Address already in use
 
-	/// Can't assign requested address
+	/// `EADDRNOTAVAIL`: "Can't assign requested address" error from errno.h in Darwin.
 	static const int eaddrnotavail = 49; // Can't assign requested address
 	
 	// ipc/network software -- operational errors
 
-	/// Network is down
+	/// `ENETDOWN`: "Network is down" error from errno.h in Darwin.
 	static const int enetdown = 50; // Network is down
 
-	/// Network is unreachable
+	/// `ENETUNREACH`: "Network is unreachable" error from errno.h in Darwin.
 	static const int enetunreach = 51; // Network is unreachable
 
-	/// Network dropped connection on reset
+	/// `ENETRESET`: "Network dropped connection on reset" error from errno.h in Darwin.
 	static const int enetreset = 52; // Network dropped connection on reset
 
-	/// Software caused connection abort
+	/// `ECONNABORTED`: "Software caused connection abort" error from errno.h in Darwin.
 	static const int econnaborted = 53; // Software caused connection abort
 
-	/// Connection reset by peer
+	/// `ECONNRESET`: "Connection reset by peer" error from errno.h in Darwin.
 	static const int econnreset = 54; // Connection reset by peer
 
-	/// No buffer space available
+	/// `ENOBUFS`: "No buffer space available" error from errno.h in Darwin.
 	static const int enobufs = 55; // No buffer space available
 
-	/// Socket is already connected
+	/// `EISCONN`: "Socket is already connected" error from errno.h in Darwin.
 	static const int eisconn = 56; // Socket is already connected
 
-	/// Socket is not connected
+	/// `ENOTCONN`: "Socket is not connected" error from errno.h in Darwin.
 	static const int enotconn = 57; // Socket is not connected
 
-	/// Can't send after socket shutdown
+	/// `ESHUTDOWN`: "Can't send after socket shutdown" error from errno.h in Darwin.
 	static const int eshutdown = 58; // Can't send after socket shutdown
 
-	/// Too many references: can't splice
+	/// `ETOOMANYREFS`: "Too many references: can't splice" error from errno.h in Darwin.
 	static const int etoomanyrefs = 59; // Too many references: can't splice
 
-	/// Operation timed out
+	/// `ETIMEDOUT`: "Operation timed out" error from errno.h in Darwin.
 	static const int etimedout = 60; // Operation timed out
 
-	/// Connection refused
+	/// `ECONNREFUSED`: "Connection refused" error from errno.h in Darwin.
 	static const int econnrefused = 61; // Connection refused
 	
-	/// Too many levels of symbolic links
+	/// `ELOOP`: "Too many levels of symbolic links" error from errno.h in Darwin.
 	static const int eloop = 62; // Too many levels of symbolic links
 
-	/// File name too long
+	/// `ENAMETOOLONG`: "File name too long" error from errno.h in Darwin.
 	static const int enametoolong = 63; // File name too long
 	
 	// should be rearranged
 
-	/// Host is down
+	/// `EHOSTDOWN`: "Host is down" error from errno.h in Darwin.
 	static const int ehostdown = 64; // Host is down
 
-	/// No route to host
+	/// `EHOSTUNREACH`: "No route to host" error from errno.h in Darwin.
 	static const int ehostunreach = 65; // No route to host
 
-	/// Directory not empty
+	/// `ENOTEMPTY`: "Directory not empty" error from errno.h in Darwin.
 	static const int enotempty = 66; // Directory not empty
 	
 	// quotas & mush
 
-	/// Too many processes
+	/// `EPROCLIM`: "Too many processes" error from errno.h in Darwin.
 	static const int eproclim = 67; // Too many processes
 
-	/// Too many users
+	/// `EUSERS`: "Too many users" error from errno.h in Darwin.
 	static const int eusers = 68; // Too many users
 
-	/// Disc quota exceeded
+	/// `EDQUOT`: "Disc quota exceeded" error from errno.h in Darwin.
 	static const int edquot = 69; // Disc quota exceeded
 	
 	// Network File System
 
-	/// Stale NFS file handle
+	/// `ESTALE`: "Stale NFS file handle" error from errno.h in Darwin.
 	static const int estale = 70; // Stale NFS file handle
 
-	/// Too many levels of remote in path
+	/// `EREMOTE`: "Too many levels of remote in path" error from errno.h in Darwin.
 	static const int eremote = 71; // Too many levels of remote in path
 
-	/// RPC struct is bad
+	/// `EBADRPC`: "RPC struct is bad" error from errno.h in Darwin.
 	static const int ebadrpc = 72; // RPC struct is bad
 
-	/// RPC version wrong
+	/// `ERPCMISMATCH`: "RPC version wrong" error from errno.h in Darwin.
 	static const int erpcmismatch = 73; // RPC version wrong
 
-	/// RPC prog. not avail
+	/// `EPROGUNAVAIL`: "RPC prog. not avail" error from errno.h in Darwin.
 	static const int eprogunavail = 74; // RPC prog. not avail
 
-	/// Program version wrong
+	/// `EPROGMISMATCH`: "Program version wrong" error from errno.h in Darwin.
 	static const int eprogmismatch = 75; // Program version wrong
 
-	/// Bad procedure for program
+	/// `EPROCUNAVAIL`: "Bad procedure for program" error from errno.h in Darwin.
 	static const int eprocunavail = 76; // Bad procedure for program
 	
-	/// No locks available
+	/// `ENOLCK`: "No locks available" error from errno.h in Darwin.
 	static const int enolck = 77; // No locks available
 
-	/// Function not implemented
+	/// `ENOSYS`: "Function not implemented" error from errno.h in Darwin.
 	static const int enosys = 78; // Function not implemented
 	
-	/// Inappropriate file type or format
+	/// `EFTYPE`: "Inappropriate file type or format" error from errno.h in Darwin.
 	static const int eftype = 79; // Inappropriate file type or format
 
-	/// Authentication error
+	/// `EAUTH`: "Authentication error" error from errno.h in Darwin.
 	static const int eauth = 80; // Authentication error
 
-	/// Need authenticator
+	/// `ENEEDAUTH`: "Need authenticator" error from errno.h in Darwin.
 	static const int eneedauth = 81; // Need authenticator
 	
 	// Intelligent device errors
 
-	/// Device power is off
+	/// `EPWROFF`: "Device power is off" error from errno.h in Darwin.
 	static const int epwroff = 82; // Device power is off
 
-	/// Device error, e.g. paper out
+	/// `EDEVERR`: "Device error, e.g. paper out" error from errno.h in Darwin.
 	static const int edeverr = 83; // Device error, e.g. paper out
 	
-	/// Value too large to be stored in data type
+	/// `EOVERFLOW`: "Value too large to be stored in data type" error from errno.h in Darwin.
 	static const int eoverflow = 84; // Value too large to be stored in data type
 	
 	// Program loading errors
 
-	/// Bad executable
+	/// `EBADEXEC`: "Bad executable" error from errno.h in Darwin.
 	static const int ebadexec = 85; // Bad executable
 
-	/// Bad CPU type in executable
+	/// `EBADARCH`: "Bad CPU type in executable" error from errno.h in Darwin.
 	static const int ebadarch = 86; // Bad CPU type in executable
 
-	/// Shared library version mismatch
+	/// `ESHLIBVERS`: "Shared library version mismatch" error from errno.h in Darwin.
 	static const int eshlibvers = 87; // Shared library version mismatch
 
-	/// Malformed Macho file
+	/// `EBADMACHO`: "Malformed Macho file" error from errno.h in Darwin.
 	static const int ebadmacho = 88; // Malformed Macho file
 	
-	/// Operation canceled
+	/// `ECANCELED`: "Operation canceled" error from errno.h in Darwin.
 	static const int ecanceled = 89; // Operation canceled
 	
-	/// Identifier removed
+	/// `EIDRM`: "Identifier removed" error from errno.h in Darwin.
 	static const int eidrm = 90; // Identifier removed
 
-	/// No message of desired type
+	/// `ENOMSG`: "No message of desired type" error from errno.h in Darwin.
 	static const int enomsg = 91; // No message of desired type
 
-	/// Illegal byte sequence
+	/// `EILSEQ`: "Illegal byte sequence" error from errno.h in Darwin.
 	static const int eilseq = 92; // Illegal byte sequence
 
-	/// Attribute not found
+	/// `ENOATTR`: "Attribute not found" error from errno.h in Darwin.
 	static const int enoattr = 93; // Attribute not found
 	
-	/// Bad message
+	/// `EBADMSG`: "Bad message" error from errno.h in Darwin.
 	static const int ebadmsg = 94; // Bad message
 
-	/// Reserved
+	/// `EMULTIHOP`: "Reserved" error from errno.h in Darwin.
 	static const int emultihop = 95; // Reserved
 
-	/// No message available on STREAM
+	/// `ENODATA`: "No message available on STREAM" error from errno.h in Darwin.
 	static const int enodata = 96; // No message available on STREAM
 
-	/// Reserved
+	/// `ENOLINK`: "Reserved" error from errno.h in Darwin.
 	static const int enolink = 97; // Reserved
 
-	/// No STREAM resources
+	/// `ENOSR`: "No STREAM resources" error from errno.h in Darwin.
 	static const int enosr = 98; // No STREAM resources
 
-	/// Not a STREAM
+	/// `ENOSTR`: "Not a STREAM" error from errno.h in Darwin.
 	static const int enostr = 99; // Not a STREAM
 
-	/// Protocol error
+	/// `EPROTO`: "Protocol error" error from errno.h in Darwin.
 	static const int eproto = 100; // Protocol error
 
-	/// STREAM ioctl timeout
+	/// `ETIME`: "STREAM ioctl timeout" error from errno.h in Darwin.
 	static const int etime = 101; // STREAM ioctl timeout
 	
 	// This value is only discrete when compiling __DARWIN_UNIX03, or KERNEL
 
-	/// Operation not supported on socket
+	/// `EOPNOTSUPP`: "Operation not supported on socket" error from errno.h in Darwin.
 	static const int eopnotsupp = 102; // Operation not supported on socket
 	
-	/// No such policy registered
+	/// `ENOPOLICY`: "No such policy registered" error from errno.h in Darwin.
 	static const int enopolicy = 103; // No such policy registered
 	
-	/// State not recoverable
+	/// `ENOTRECOVERABLE`: "State not recoverable" error from errno.h in Darwin.
 	static const int enotrecoverable = 104; // State not recoverable
 
-	/// Previous owner died
+	/// `EOWNERDEAD`: "Previous owner died" error from errno.h in Darwin.
 	static const int eownerdead = 105; // Previous owner died
 	
-	/// Interface output queue is full
+	/// `EQFULL`: "Interface output queue is full" error from errno.h in Darwin.
 	static const int eqfull = 106; // Interface output queue is full
 
-	/// Must be equal largest errno
+	/// `ELAST`: "Must be equal largest errno" error from errno.h in Darwin.
 	static const int elast = 106; // Must be equal largest errno
 	
 
-	//// THE FOLLOWING CONSTANTS ARE NOT FROM ERRNO.H ////
+	// THE FOLLOWING CONSTANTS ARE NOT FROM ERRNO.H //
 
 	// These constants are added for code readability
 	// as they are more consistent with the Dart naming standards
 
-	/// EPERM: Operation not permitted
+	/// Alias for `EPERM` from errno.h in Darwin.
+	/// "Operation not permitted" error.
 	static const int operationNotPermitted = eperm;
 
-	/// ENOENT: No such file or directory
+	/// Alias for `ENOENT` from errno.h in Darwin.
+	/// "No such file or directory" error.
 	static const int noSuchFileOrDirectory = enoent;
 
-	/// ESRCH: No such process
+	/// Alias for `ESRCH` from errno.h in Darwin.
+	/// "No such process" error.
 	static const int noSuchProcess = esrch;
 
-	/// EINTR: Interrupted system call
+	/// Alias for `EINTR` from errno.h in Darwin.
+	/// "Interrupted system call" error.
 	static const int interruptedSystemCall = eintr;
 
-	/// EIO: Input/output error
+	/// Alias for `EIO` from errno.h in Darwin.
+	/// "Input/output error" error.
 	static const int inputOutputError = eio;
 
-	/// ENXIO: Device not configured
+	/// Alias for `ENXIO` from errno.h in Darwin.
+	/// "Device not configured" error.
 	static const int deviceNotConfigured = enxio;
 
-	/// E2BIG: Argument list too long
+	/// Alias for `E2BIG` from errno.h in Darwin.
+	/// "Argument list too long" error.
 	static const int argumentListTooLong = e2big;
 
-	/// ENOEXEC: Exec format error
+	/// Alias for `ENOEXEC` from errno.h in Darwin.
+	/// "Exec format error" error.
 	static const int execFormatError = enoexec;
 
-	/// EBADF: Bad file descriptor
+	/// Alias for `EBADF` from errno.h in Darwin.
+	/// "Bad file descriptor" error.
 	static const int badFileDescriptor = ebadf;
 
-	/// ECHILD: No child processes
+	/// Alias for `ECHILD` from errno.h in Darwin.
+	/// "No child processes" error.
 	static const int noChildProcesses = echild;
 
-	/// EDEADLK: Resource deadlock avoided
+	/// Alias for `EDEADLK` from errno.h in Darwin.
+	/// "Resource deadlock avoided" error.
 	static const int resourceDeadlockAvoided = edeadlk;
 
-	/// ENOMEM: Cannot allocate memory
+	/// Alias for `ENOMEM` from errno.h in Darwin.
+	/// "Cannot allocate memory" error.
 	static const int cannotAllocateMemory = enomem;
 
-	/// EACCES: Permission denied
+	/// Alias for `EACCES` from errno.h in Darwin.
+	/// "Permission denied" error.
 	static const int permissionDenied = eacces;
 
-	/// EFAULT: Bad address
+	/// Alias for `EFAULT` from errno.h in Darwin.
+	/// "Bad address" error.
 	static const int badAddress = efault;
 
-	/// ENOTBLK: Block device required
+	/// Alias for `ENOTBLK` from errno.h in Darwin.
+	/// "Block device required" error.
 	static const int blockDeviceRequired = enotblk;
 
-	/// EBUSY: Device / Resource busy
+	/// Alias for `EBUSY` from errno.h in Darwin.
+	/// "Device / Resource busy" error.
 	static const int deviceResourceBusy = ebusy;
 
-	/// EEXIST: File exists
+	/// Alias for `EEXIST` from errno.h in Darwin.
+	/// "File exists" error.
 	static const int fileExists = eexist;
 
-	/// EXDEV: Cross-device link
+	/// Alias for `EXDEV` from errno.h in Darwin.
+	/// "Cross-device link" error.
 	static const int crossDeviceLink = exdev;
 
-	/// ENODEV: Operation not supported by device
+	/// Alias for `ENODEV` from errno.h in Darwin.
+	/// "Operation not supported by device" error.
 	static const int operationNotSupportedByDevice = enodev;
 
-	/// ENOTDIR: Not a directory
+	/// Alias for `ENOTDIR` from errno.h in Darwin.
+	/// "Not a directory" error.
 	static const int notDirectory = enotdir;
 
-	/// EISDIR: Is a directory
+	/// Alias for `EISDIR` from errno.h in Darwin.
+	/// "Is a directory" error.
 	static const int isDirectory = eisdir;
 
-	/// EINVAL: Invalid argument
+	/// Alias for `EINVAL` from errno.h in Darwin.
+	/// "Invalid argument" error.
 	static const int invalidArgument = einval;
 
-	/// ENFILE: Too many open files in system
+	/// Alias for `ENFILE` from errno.h in Darwin.
+	/// "Too many open files in system" error.
 	static const int tooManyOpenFilesInSystem = enfile;
 
-	/// EMFILE: Too many open files
+	/// Alias for `EMFILE` from errno.h in Darwin.
+	/// "Too many open files" error.
 	static const int tooManyOpenFiles = emfile;
 
-	/// ENOTTY: Inappropriate ioctl for device
+	/// Alias for `ENOTTY` from errno.h in Darwin.
+	/// "Inappropriate ioctl for device" error.
 	static const int inappropriateIoctlForDevice = enotty;
 
-	/// ETXTBSY: Text file busy
+	/// Alias for `ETXTBSY` from errno.h in Darwin.
+	/// "Text file busy" error.
 	static const int textFileBusy = etxtbsy;
 
-	/// EFBIG: File too large
+	/// Alias for `EFBIG` from errno.h in Darwin.
+	/// "File too large" error.
 	static const int fileTooLarge = efbig;
 
-	/// ENOSPC: No space left on device
+	/// Alias for `ENOSPC` from errno.h in Darwin.
+	/// "No space left on device" error.
 	static const int noSpaceLeftOnDevice = enospc;
 
-	/// ESPIPE: Illegal seek
+	/// Alias for `ESPIPE` from errno.h in Darwin.
+	/// "Illegal seek" error.
 	static const int illegalSeek = espipe;
 
-	/// EROFS: Read-only file system
+	/// Alias for `EROFS` from errno.h in Darwin.
+	/// "Read-only file system" error.
 	static const int readOnlyFileSystem = erofs;
 
-	/// EMLINK: Too many links
+	/// Alias for `EMLINK` from errno.h in Darwin.
+	/// "Too many links" error.
 	static const int tooManyLinks = emlink;
 
-	/// EPIPE: Broken pipe
+	/// Alias for `EPIPE` from errno.h in Darwin.
+	/// "Broken pipe" error.
 	static const int brokenPipe = epipe;
 
-	/// EDOM: Numerical argument out of domain
+	/// Alias for `EDOM` from errno.h in Darwin.
+	/// "Numerical argument out of domain" error.
 	static const int numericalArgumentOutOfDomain = edom;
 
-	/// ERANGE: Result too large
+	/// Alias for `ERANGE` from errno.h in Darwin.
+	/// "Result too large" error.
 	static const int resultTooLarge = erange;
 
-	/// EAGAIN: Resource temporarily unavailable
+	/// Alias for `EAGAIN` from errno.h in Darwin.
+	/// "Resource temporarily unavailable" error.
 	static const int resourceTemporarilyUnavailable = eagain;
 
-	/// EWOULDBLOCK: Operation would block
+	/// Alias for `EWOULDBLOCK` from errno.h in Darwin.
+	/// "Operation would block" error.
 	static const int operationWouldBlock = ewouldblock;
 
-	/// EINPROGRESS: Operation now in progress
+	/// Alias for `EINPROGRESS` from errno.h in Darwin.
+	/// "Operation now in progress" error.
 	static const int operationNowInProgress = einprogress;
 
-	/// EALREADY: Operation already in progress
+	/// Alias for `EALREADY` from errno.h in Darwin.
+	/// "Operation already in progress" error.
 	static const int operationAlreadyInProgress = ealready;
 
-	/// ENOTSOCK: Socket operation on non-socket
+	/// Alias for `ENOTSOCK` from errno.h in Darwin.
+	/// "Socket operation on non-socket" error.
 	static const int socketOperationOnNonSocket = enotsock;
 
-	/// EDESTADDRREQ: Destination address required
+	/// Alias for `EDESTADDRREQ` from errno.h in Darwin.
+	/// "Destination address required" error.
 	static const int destinationAddressRequired = edestaddrreq;
 
-	/// EMSGSIZE: Message too long
+	/// Alias for `EMSGSIZE` from errno.h in Darwin.
+	/// "Message too long" error.
 	static const int messageTooLong = emsgsize;
 
-	/// EPROTOTYPE: Protocol wrong type for socket
+	/// Alias for `EPROTOTYPE` from errno.h in Darwin.
+	/// "Protocol wrong type for socket" error.
 	static const int protocolWrongTypeForSocket = eprototype;
 
-	/// ENOPROTOOPT: Protocol not available
+	/// Alias for `ENOPROTOOPT` from errno.h in Darwin.
+	/// "Protocol not available" error.
 	static const int protocolNotAvailable = enoprotoopt;
 
-	/// EPROTONOSUPPORT: Protocol not supported
+	/// Alias for `EPROTONOSUPPORT` from errno.h in Darwin.
+	/// "Protocol not supported" error.
 	static const int protocolNotSupported = eprotonosupport;
 
-	/// ESOCKTNOSUPPORT: Socket type not supported
+	/// Alias for `ESOCKTNOSUPPORT` from errno.h in Darwin.
+	/// "Socket type not supported" error.
 	static const int socketTypeNotSupported = esocktnosupport;
 
-	/// ENOTSUP: Operation not supported
+	/// Alias for `ENOTSUP` from errno.h in Darwin.
+	/// "Operation not supported" error.
 	static const int operationNotSupported = enotsup;
 
-	/// EPFNOSUPPORT: Protocol family not supported
+	/// Alias for `EPFNOSUPPORT` from errno.h in Darwin.
+	/// "Protocol family not supported" error.
 	static const int protocolFamilyNotSupported = epfnosupport;
 
-	/// EAFNOSUPPORT: Address family not supported by protocol family
+	/// Alias for `EAFNOSUPPORT` from errno.h in Darwin.
+	/// "Address family not supported by protocol family" error.
 	static const int addressFamilyNotSupportedByProtocolFamily = eafnosupport;
 
-	/// EADDRINUSE: Address already in use
+	/// Alias for `EADDRINUSE` from errno.h in Darwin.
+	/// "Address already in use" error.
 	static const int addressAlreadyInUse = eaddrinuse;
 
-	/// EADDRNOTAVAIL: Can't assign requested address
+	/// Alias for `EADDRNOTAVAIL` from errno.h in Darwin.
+	/// "Can't assign requested address" error.
 	static const int canTAssignRequestedAddress = eaddrnotavail;
 
-	/// ENETDOWN: Network is down
+	/// Alias for `ENETDOWN` from errno.h in Darwin.
+	/// "Network is down" error.
 	static const int networkIsDown = enetdown;
 
-	/// ENETUNREACH: Network is unreachable
+	/// Alias for `ENETUNREACH` from errno.h in Darwin.
+	/// "Network is unreachable" error.
 	static const int networkIsUnreachable = enetunreach;
 
-	/// ENETRESET: Network dropped connection on reset
+	/// Alias for `ENETRESET` from errno.h in Darwin.
+	/// "Network dropped connection on reset" error.
 	static const int networkDroppedConnectionOnReset = enetreset;
 
-	/// ECONNABORTED: Software caused connection abort
+	/// Alias for `ECONNABORTED` from errno.h in Darwin.
+	/// "Software caused connection abort" error.
 	static const int softwareCausedConnectionAbort = econnaborted;
 
-	/// ECONNRESET: Connection reset by peer
+	/// Alias for `ECONNRESET` from errno.h in Darwin.
+	/// "Connection reset by peer" error.
 	static const int connectionResetByPeer = econnreset;
 
-	/// ENOBUFS: No buffer space available
+	/// Alias for `ENOBUFS` from errno.h in Darwin.
+	/// "No buffer space available" error.
 	static const int noBufferSpaceAvailable = enobufs;
 
-	/// EISCONN: Socket is already connected
+	/// Alias for `EISCONN` from errno.h in Darwin.
+	/// "Socket is already connected" error.
 	static const int socketIsAlreadyConnected = eisconn;
 
-	/// ENOTCONN: Socket is not connected
+	/// Alias for `ENOTCONN` from errno.h in Darwin.
+	/// "Socket is not connected" error.
 	static const int socketIsNotConnected = enotconn;
 
-	/// ESHUTDOWN: Can't send after socket shutdown
+	/// Alias for `ESHUTDOWN` from errno.h in Darwin.
+	/// "Can't send after socket shutdown" error.
 	static const int canTSendAfterSocketShutdown = eshutdown;
 
-	/// ETOOMANYREFS: Too many references: can't splice
+	/// Alias for `ETOOMANYREFS` from errno.h in Darwin.
+	/// "Too many references: can't splice" error.
 	static const int tooManyReferencesCanTSplice = etoomanyrefs;
 
-	/// ETIMEDOUT: Operation timed out
+	/// Alias for `ETIMEDOUT` from errno.h in Darwin.
+	/// "Operation timed out" error.
 	static const int operationTimedOut = etimedout;
 
-	/// ECONNREFUSED: Connection refused
+	/// Alias for `ECONNREFUSED` from errno.h in Darwin.
+	/// "Connection refused" error.
 	static const int connectionRefused = econnrefused;
 
-	/// ELOOP: Too many levels of symbolic links
+	/// Alias for `ELOOP` from errno.h in Darwin.
+	/// "Too many levels of symbolic links" error.
 	static const int tooManyLevelsOfSymbolicLinks = eloop;
 
-	/// ENAMETOOLONG: File name too long
+	/// Alias for `ENAMETOOLONG` from errno.h in Darwin.
+	/// "File name too long" error.
 	static const int fileNameTooLong = enametoolong;
 
-	/// EHOSTDOWN: Host is down
+	/// Alias for `EHOSTDOWN` from errno.h in Darwin.
+	/// "Host is down" error.
 	static const int hostIsDown = ehostdown;
 
-	/// EHOSTUNREACH: No route to host
+	/// Alias for `EHOSTUNREACH` from errno.h in Darwin.
+	/// "No route to host" error.
 	static const int noRouteToHost = ehostunreach;
 
-	/// ENOTEMPTY: Directory not empty
+	/// Alias for `ENOTEMPTY` from errno.h in Darwin.
+	/// "Directory not empty" error.
 	static const int directoryNotEmpty = enotempty;
 
-	/// EPROCLIM: Too many processes
+	/// Alias for `EPROCLIM` from errno.h in Darwin.
+	/// "Too many processes" error.
 	static const int tooManyProcesses = eproclim;
 
-	/// EUSERS: Too many users
+	/// Alias for `EUSERS` from errno.h in Darwin.
+	/// "Too many users" error.
 	static const int tooManyUsers = eusers;
 
-	/// EDQUOT: Disc quota exceeded
+	/// Alias for `EDQUOT` from errno.h in Darwin.
+	/// "Disc quota exceeded" error.
 	static const int discQuotaExceeded = edquot;
 
-	/// ESTALE: Stale NFS file handle
+	/// Alias for `ESTALE` from errno.h in Darwin.
+	/// "Stale NFS file handle" error.
 	static const int staleNfsFileHandle = estale;
 
-	/// EREMOTE: Too many levels of remote in path
+	/// Alias for `EREMOTE` from errno.h in Darwin.
+	/// "Too many levels of remote in path" error.
 	static const int tooManyLevelsOfRemoteInPath = eremote;
 
-	/// EBADRPC: RPC struct is bad
+	/// Alias for `EBADRPC` from errno.h in Darwin.
+	/// "RPC struct is bad" error.
 	static const int rpcStructIsBad = ebadrpc;
 
-	/// ERPCMISMATCH: RPC version wrong
+	/// Alias for `ERPCMISMATCH` from errno.h in Darwin.
+	/// "RPC version wrong" error.
 	static const int rpcVersionWrong = erpcmismatch;
 
-	/// EPROGUNAVAIL: RPC prog. not avail
+	/// Alias for `EPROGUNAVAIL` from errno.h in Darwin.
+	/// "RPC prog. not avail" error.
 	static const int rpcProgNotAvail = eprogunavail;
 
-	/// EPROGMISMATCH: Program version wrong
+	/// Alias for `EPROGMISMATCH` from errno.h in Darwin.
+	/// "Program version wrong" error.
 	static const int programVersionWrong = eprogmismatch;
 
-	/// EPROCUNAVAIL: Bad procedure for program
+	/// Alias for `EPROCUNAVAIL` from errno.h in Darwin.
+	/// "Bad procedure for program" error.
 	static const int badProcedureForProgram = eprocunavail;
 
-	/// ENOLCK: No locks available
+	/// Alias for `ENOLCK` from errno.h in Darwin.
+	/// "No locks available" error.
 	static const int noLocksAvailable = enolck;
 
-	/// ENOSYS: Function not implemented
+	/// Alias for `ENOSYS` from errno.h in Darwin.
+	/// "Function not implemented" error.
 	static const int functionNotImplemented = enosys;
 
-	/// EFTYPE: Inappropriate file type or format
+	/// Alias for `EFTYPE` from errno.h in Darwin.
+	/// "Inappropriate file type or format" error.
 	static const int inappropriateFileTypeOrFormat = eftype;
 
-	/// EAUTH: Authentication error
+	/// Alias for `EAUTH` from errno.h in Darwin.
+	/// "Authentication error" error.
 	static const int authenticationError = eauth;
 
-	/// ENEEDAUTH: Need authenticator
+	/// Alias for `ENEEDAUTH` from errno.h in Darwin.
+	/// "Need authenticator" error.
 	static const int needAuthenticator = eneedauth;
 
-	/// EPWROFF: Device power is off
+	/// Alias for `EPWROFF` from errno.h in Darwin.
+	/// "Device power is off" error.
 	static const int devicePowerIsOff = epwroff;
 
-	/// EDEVERR: Device error, e.g. paper out
+	/// Alias for `EDEVERR` from errno.h in Darwin.
+	/// "Device error, e.g. paper out" error.
 	static const int deviceError = edeverr;
 
-	/// EOVERFLOW: Value too large to be stored in data type
+	/// Alias for `EOVERFLOW` from errno.h in Darwin.
+	/// "Value too large to be stored in data type" error.
 	static const int valueTooLargeToBeStoredInDataType = eoverflow;
 
-	/// EBADEXEC: Bad executable
+	/// Alias for `EBADEXEC` from errno.h in Darwin.
+	/// "Bad executable" error.
 	static const int badExecutable = ebadexec;
 
-	/// EBADARCH: Bad CPU type in executable
+	/// Alias for `EBADARCH` from errno.h in Darwin.
+	/// "Bad CPU type in executable" error.
 	static const int badCpuTypeInExecutable = ebadarch;
 
-	/// ESHLIBVERS: Shared library version mismatch
+	/// Alias for `ESHLIBVERS` from errno.h in Darwin.
+	/// "Shared library version mismatch" error.
 	static const int sharedLibraryVersionMismatch = eshlibvers;
 
-	/// EBADMACHO: Malformed Macho file
+	/// Alias for `EBADMACHO` from errno.h in Darwin.
+	/// "Malformed Macho file" error.
 	static const int malformedMachoFile = ebadmacho;
 
-	/// ECANCELED: Operation canceled
+	/// Alias for `ECANCELED` from errno.h in Darwin.
+	/// "Operation canceled" error.
 	static const int operationCanceled = ecanceled;
 
-	/// EIDRM: Identifier removed
+	/// Alias for `EIDRM` from errno.h in Darwin.
+	/// "Identifier removed" error.
 	static const int identifierRemoved = eidrm;
 
-	/// ENOMSG: No message of desired type
+	/// Alias for `ENOMSG` from errno.h in Darwin.
+	/// "No message of desired type" error.
 	static const int noMessageOfDesiredType = enomsg;
 
-	/// EILSEQ: Illegal byte sequence
+	/// Alias for `EILSEQ` from errno.h in Darwin.
+	/// "Illegal byte sequence" error.
 	static const int illegalByteSequence = eilseq;
 
-	/// ENOATTR: Attribute not found
+	/// Alias for `ENOATTR` from errno.h in Darwin.
+	/// "Attribute not found" error.
 	static const int attributeNotFound = enoattr;
 
-	/// EBADMSG: Bad message
+	/// Alias for `EBADMSG` from errno.h in Darwin.
+	/// "Bad message" error.
 	static const int badMessage = ebadmsg;
 
-	/// ENODATA: No message available on STREAM
+	/// Alias for `ENODATA` from errno.h in Darwin.
+	/// "No message available on STREAM" error.
 	static const int noMessageAvailableOnStream = enodata;
 
-	/// ENOSR: No STREAM resources
+	/// Alias for `ENOSR` from errno.h in Darwin.
+	/// "No STREAM resources" error.
 	static const int noStreamResources = enosr;
 
-	/// ENOSTR: Not a STREAM
+	/// Alias for `ENOSTR` from errno.h in Darwin.
+	/// "Not a STREAM" error.
 	static const int notStream = enostr;
 
-	/// EPROTO: Protocol error
+	/// Alias for `EPROTO` from errno.h in Darwin.
+	/// "Protocol error" error.
 	static const int protocolError = eproto;
 
-	/// ETIME: STREAM ioctl timeout
+	/// Alias for `ETIME` from errno.h in Darwin.
+	/// "STREAM ioctl timeout" error.
 	static const int streamIoctlTimeout = etime;
 
-	/// EOPNOTSUPP: Operation not supported on socket
+	/// Alias for `EOPNOTSUPP` from errno.h in Darwin.
+	/// "Operation not supported on socket" error.
 	static const int operationNotSupportedOnSocket = eopnotsupp;
 
-	/// ENOPOLICY: No such policy registered
+	/// Alias for `ENOPOLICY` from errno.h in Darwin.
+	/// "No such policy registered" error.
 	static const int noSuchPolicyRegistered = enopolicy;
 
-	/// ENOTRECOVERABLE: State not recoverable
+	/// Alias for `ENOTRECOVERABLE` from errno.h in Darwin.
+	/// "State not recoverable" error.
 	static const int stateNotRecoverable = enotrecoverable;
 
-	/// EOWNERDEAD: Previous owner died
+	/// Alias for `EOWNERDEAD` from errno.h in Darwin.
+	/// "Previous owner died" error.
 	static const int previousOwnerDied = eownerdead;
 
-	/// EQFULL: Interface output queue is full
+	/// Alias for `EQFULL` from errno.h in Darwin.
+	/// "Interface output queue is full" error.
 	static const int interfaceOutputQueueIsFull = eqfull;
 
-	/// ELAST: Must be equal largest errno
+	/// Alias for `ELAST` from errno.h in Darwin.
+	/// "Must be equal largest errno" error.
 	static const int mustBeEqualLargestErrno = elast;
 }
