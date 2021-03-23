@@ -11,10 +11,9 @@
 //
 // And the errno.h is an example of a file intended for kernel use, not
 // creating a derived work. Even GCC builds proprietary programs 
-// with errno.h.
-// 
-// Thus, I am sure that this file does not fall under copyleft 
-// requirements.
+// with errno.h. So I'm pretty sure that neither errno.h nor this file
+// falls under the GPL copyleft requirements as long as they are used 
+// to interact with the kernel.
 //
 // I keep all SPDX IDs in code as recommended, along with the rest 
 // of the comments.
