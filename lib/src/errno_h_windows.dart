@@ -1,9 +1,7 @@
 
 // SPDX-FileCopyrightText: (c) 2021 Art Galkin <github.com/rtmigo>
 // SPDX-License-Identifier: BSD-3-Clause
-//
-// This is an incomplete list of Windows error codes, compiled 
-// from multiple incomplete sources.
+
 
 /// These numbers can usually be found in the [OSError.errorCode]
 /// property value, when the Dart/Flutter app runs on Windows platform. 
