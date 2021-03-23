@@ -1,3 +1,7 @@
+# 1.4
+
+- Updated SDK version restrictions to support sound null safety
+
 # 1.3.0
 
 - Updated docstring values for better previews in IDEA
