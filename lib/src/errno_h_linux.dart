@@ -6,18 +6,18 @@
 // in Ubuntu 20.04. The files were dated Feb 19, 2021.
 //
 // The Linux kernel is licensed under the GPL 2.0 with Linus Torvalds' 
-// note that programs that only make system calls to the kernel are not 
-// "derived work". This is considered normal kernel use.
-//
-// And the errno.h is an example of a file intended for kernel use, not
-// creating a derived work. Even GCC builds proprietary programs 
-// with errno.h. So I'm pretty sure that neither errno.h nor this file
-// falls under the GPL copyleft requirements as long as they are used 
-// to interact with the kernel.
+// note that when a program uses code to make system calls to the kernel, 
+// this is the normal use. Such a program is not a "derived work".
+// So I'm pretty sure that neither "errno.h" nor this file falls under 
+// the GPL copyleft requirements as long as they are used to interact 
+// with the kernel.
 //
 // I keep all SPDX IDs in code as recommended, along with the rest 
-// of the comments.
+// of the comments. 
 
+/// These numbers can usually be found in the [OSError.errorCode]
+/// property value, when the Dart/Flutter app runs on Linux or  
+/// Android platform.
 class LinuxErrno {
 
 	// errno-base.h

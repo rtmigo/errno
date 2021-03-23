@@ -5,6 +5,8 @@
 // This is an incomplete list of Windows error codes, compiled 
 // from multiple incomplete sources.
 
+/// These numbers can usually be found in the [OSError.errorCode]
+/// property value, when the Dart/Flutter app runs on Windows platform. 
 class WindowsErrno {
 
 	static const errorSuccess = 0; // ERROR_SUCCESS

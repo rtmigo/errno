@@ -10,6 +10,9 @@
 //
 // All the original comments have been preserved.
 
+/// These numbers can usually be found in the [OSError.errorCode]
+/// property value, when the Dart/Flutter app runs on macOS or 
+/// iOS platform. 
 class DarwinErrno {
 
 	//
