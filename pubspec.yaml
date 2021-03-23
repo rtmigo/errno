@@ -1,6 +1,6 @@
 name: errno
 description: "Defines system error code constants for the OSs that the Dart platform is running on"
-version: 1.2.0
+version: 1.3.0
 repository: https://github.com/rtmigo/errno
 
 environment:
