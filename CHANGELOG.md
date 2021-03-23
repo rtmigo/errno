@@ -1,6 +1,6 @@
 # 1.1.0
 
-- Comments on constants replaced with docstrings
+- Comments replaced with docstrings
 
 # 1.0.1
 
