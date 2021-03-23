@@ -17,7 +17,7 @@ property usually specifies the problem that occurred.
 | iOS, macOS     | `DarwinErrors`  |
 | Windows        | `WindowsErrors` |
 
-# Example 
+## Example 
 
 ``` dart
 import 'dart:io';
