@@ -635,7 +635,7 @@ class DarwinErrors {
 
 	/// Alias for `EADDRNOTAVAIL` from errno.h in Darwin.
 	/// "Can't assign requested address" error.
-	static const int canTAssignRequestedAddress = eaddrnotavail;
+	static const int cannotAssignRequestedAddress = eaddrnotavail;
 
 	/// Alias for `ENETDOWN` from errno.h in Darwin.
 	/// "Network is down" error.
@@ -671,7 +671,7 @@ class DarwinErrors {
 
 	/// Alias for `ESHUTDOWN` from errno.h in Darwin.
 	/// "Can't send after socket shutdown" error.
-	static const int canTSendAfterSocketShutdown = eshutdown;
+	static const int cannotSendAfterSocketShutdown = eshutdown;
 
 	/// Alias for `ETOOMANYREFS` from errno.h in Darwin.
 	/// "Too many references: can't splice" error.
